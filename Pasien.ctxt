@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Pasien
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Pasien\ here.\r\n\r\n\ @author\ Sofia\r\n\ @version\ 3.11.2022\r\n
+comment1.params=
+comment1.target=Pasien()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Pasien\r\n
+comment2.params=nama
+comment2.target=Pasien(java.lang.String)
+comment2.text=\r\n\ Constructor\ for\ objects\ of\ class\ Pasien\r\n
+comment3.params=
+comment3.target=java.lang.String\ getNama()
+comment3.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
+comment4.params=namabaru
+comment4.target=void\ setNama(java.lang.String)
+comment4.text=\r\n\ Method\ ini\ berfungsi\ untuk\ menetapkan\ nilai\ dari\ koin\r\n\r\n\ @param\ nilaibaru\ nilai\ baru\ dari\ koin\r\n
+numComments=5
