@@ -1,27 +1,27 @@
 
 /**
- * Write a description of class Pasien here.
+ * Write a description of class Pelanggan here.
  *
  * @author Sofia
  * @version 3.11.2022
  */
-public class Pasien
+public class Pelanggan
 {
     private String nama;
     private String ktp;
 
     /**
-     * Constructor for objects of class Pasien
+     * Constructor for objects of class Pelanggan
      */
-    public Pasien()
+    public Pelanggan()
     {
         
     }
     
     /**
-     * Constructor for objects of class Pasien
+     * Constructor for objects of class Pelanggan
      */
-    public Pasien(String nama)
+    public Pelanggan(String nama)
     {
         this.nama = nama;
     }
