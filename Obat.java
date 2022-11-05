@@ -7,7 +7,6 @@
  */
 public abstract class Obat
 {
-    // instance variables - replace the example below with your own
     private String nama;
     private int harga;
     private String deskripsi;
@@ -41,17 +40,6 @@ public abstract class Obat
     public int isiKeranjang(int harga, int kuantitas){
         this.keranjang = harga * kuantitas;
         return this.keranjang;
-    }
-    
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public void stok()
-    {
-        
     }
     
     public abstract void caraPakai();
