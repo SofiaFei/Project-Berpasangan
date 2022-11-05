@@ -40,52 +40,52 @@ public class MainApotek
     public static void main(String[] args){
         System.out.println("Paracetamol");
         Obat Paracetamol = new ObatTablet("Paracetamol", 7500);
-        Paracetamol.setDeskripsi("Kandungan: \nParacetamol 500 mg\nKegunaan: \nUntuk meredakan demam dan nyeri, mengendalikan kadar gula darah dan menjaga fungsi otot"); 
+        Paracetamol.setDeskripsi("Kandungan: \nParacetamol 500 mg\nKegunaan: \nUntuk meredakan demam dan nyeri, mengendalikan kadar gula darah dan menjaga fungsi otot."); 
         System.out.println(Paracetamol.getDeskripsi());
 
         System.out.println("Panadol");
         Obat Panadol = new ObatTablet("Panadol", 12000);
-        Panadol.setDeskripsi("Kandungan: \nParacetamol \nKegunaan: \nUntuk meredakan demam dan nyeri"); 
+        Panadol.setDeskripsi("Kandungan: \nParacetamol \nKegunaan: \nUntuk meredakan demam dan nyeri."); 
         System.out.println(Panadol.getDeskripsi());
 
         System.out.println("Bodrex");
         Obat Bodrex = new ObatTablet("Bodrex", 11000);
-        Bodrex.setDeskripsi("Kandungan: \nCaffeine 50 mg \nParacetamol 600 mg \nKegunaan: \nUntuk meringankan sakit kepala,sakit gigi dan menurunkan demam"); 
+        Bodrex.setDeskripsi("Kandungan: \nCaffeine 50 mg \nParacetamol 600 mg \nKegunaan: \nUntuk meringankan sakit kepala,sakit gigi dan menurunkan demam."); 
         System.out.println(Bodrex.getDeskripsi());
 
         System.out.println("Domperidone");
         Obat Domperidone = new ObatTablet("Domperidone", 6500);
-        Domperidone.setDeskripsi("Kandungan: \nDomperidone 10 mg  \nKegunaan: \nUntuk meredakan mual dan muntah,mempercepat kontraksi usus atau lambung,serta meningkatkan produksi ASI"); 
+        Domperidone.setDeskripsi("Kandungan: \nDomperidone 10 mg  \nKegunaan: \nUntuk meredakan mual dan muntah,mempercepat kontraksi usus atau lambung,serta meningkatkan produksi ASI."); 
         System.out.println(Domperidone.getDeskripsi());
 
         System.out.println("Amlodipine");
         Obat Amlodipine = new ObatTablet("Amlodipine", 26400);
-        Amlodipine.setDeskripsi("Kandungan: \nAmlodipine 10 mg \nKegunaan: \nUntuk mengontrol tekanan darah"); 
+        Amlodipine.setDeskripsi("Kandungan: \nAmlodipine 10 mg \nKegunaan: \nUntuk mengontrol tekanan darah."); 
         System.out.println(Amlodipine.getDeskripsi());
 
         System.out.println("Promag");
         Obat Promag = new ObatTablet("Promag", 9000);
-        Promag.setDeskripsi("Kandungan: \nHydrotalcite 200 mg \n Mg(OH)2 150 mg \nSimethicone 50 mg \nKegunaan: \nUntuk meringankan gejala-gejala yang berhubungan dengan asam lambung"); 
+        Promag.setDeskripsi("Kandungan: \nHydrotalcite 200 mg \nMg(OH)2 150 mg \nSimethicone 50 mg \nKegunaan: \nUntuk meringankan gejala-gejala yang berhubungan dengan asam lambung."); 
         System.out.println(Promag.getDeskripsi());
 
         System.out.println("Entrostop");
         Obat Entrostop = new ObatTablet("Entrostop", 17800);
-        Entrostop.setDeskripsi("Kandungan: \nAttapulgite koloid aktif 650 mg \nPectin 50 mg \nKegunaan: \nUntuk mengatasi diare, menyerap racun, dan memadatkan tinja"); 
+        Entrostop.setDeskripsi("Kandungan: \nAttapulgite koloid aktif 650 mg \nPectin 50 mg \nKegunaan: \nUntuk mengatasi diare, menyerap racun, dan memadatkan tinja."); 
         System.out.println(Entrostop.getDeskripsi());
 
         System.out.println("Lodia");
         Obat Lodia = new ObatTablet("Lodia", 24100);
-        Lodia.setDeskripsi("Kandungan: \nLoperamide HCL 2 mg \nKegunaan: \nUntuk diare akut non spesifik dan diare kronik"); 
+        Lodia.setDeskripsi("Kandungan: \nLoperamide HCL 2 mg \nKegunaan: \nUntuk diare akut non spesifik dan diare kronik."); 
         System.out.println(Lodia.getDeskripsi());
 
         System.out.println("Sangobion");
         Obat Sangobion = new ObatTablet("Sangobion", 22600);
-        Sangobion.setDeskripsi("Kandungan: \nFe gluconate 250 mg (setara elemental Fe 30 mg)  \nManganese Sulfate 0.2 mg \nCopper Sulfate 0.2 mg \nvit.C 50 mg \nFolic Acid 1 mg \nvit.B12 7.5 mcg \nKegunaan: \nUntuk membantu pembentukan darah"); 
+        Sangobion.setDeskripsi("Kandungan: \nFe gluconate 250 mg (setara elemental Fe 30 mg)  \nManganese Sulfate 0.2 mg \nCopper Sulfate 0.2 mg \nvit.C 50 mg \nFolic Acid 1 mg \nvit.B12 7.5 mcg \nKegunaan: \nUntuk membantu pembentukan darah."); 
         System.out.println(Sangobion.getDeskripsi());
 
         System.out.println("Neurobion");
         Obat Neurobion = new ObatTablet("Neurobion", 48000);
-        Neurobion.setDeskripsi("Kandungan: \nVitamin B1 100 mg \nVitamin B6 100 \nVitamin B12 5000 mcg \nKegunaan: \nUntuk defisiensi Vitamin B1,B6 dan B12"); 
+        Neurobion.setDeskripsi("Kandungan: \nVitamin B1 100 mg \nVitamin B6 100 \nVitamin B12 5000 mcg \nKegunaan: \nUntuk defisiensi Vitamin B1,B6 dan B12."); 
         System.out.println(Neurobion.getDeskripsi());
     }
 }
