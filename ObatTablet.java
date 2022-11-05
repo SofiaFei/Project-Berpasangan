@@ -7,7 +7,6 @@
  */
 public class ObatTablet extends Obat
 {
-    private int x;
 
     /**
      * Constructor for objects of class ObatTablet

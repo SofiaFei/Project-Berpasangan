@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 /**
  * Write a description of class Invoice here.
@@ -15,8 +16,7 @@ public class Invoice
      */
     public Invoice()
     {
-        // initialise instance variables
-        x = 0;
+        
     }
 
     /**
@@ -25,9 +25,9 @@ public class Invoice
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int sampleMethod(int y)
+    public void sampleMethod()
     {
-        // put your code here
-        return x + y;
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        
     }
 }
