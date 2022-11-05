@@ -7,18 +7,16 @@
  */
 public class ObatTablet extends Obat
 {
-    // instance variables - replace the example below with your own
     private int x;
 
     /**
      * Constructor for objects of class ObatTablet
      */
-    public ObatTablet()
+    public ObatTablet(String nama, int harga)
     {
-        // initialise instance variables
-        x = 0;
+        super(nama, harga);
     }
-
+    
     /**
      * An example of a method - replace this comment with your own
      *
@@ -29,4 +27,8 @@ public class ObatTablet extends Obat
         System.out.println("Obat digunakan dengan cara ditelan bersama dengan air. Cocok untuk orang dewasa");
     }
     
+    public void cetakDeskripsi(String desc){
+        super.setDeskripsi(desc);
+        System.out.println(super.getDeskripsi());
+    }
 }

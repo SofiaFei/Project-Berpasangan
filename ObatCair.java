@@ -7,16 +7,14 @@
  */
 public class ObatCair extends Obat
 {
-    // instance variables - replace the example below with your own
     private int x;
 
     /**
      * Constructor for objects of class ObatCair
      */
-    public ObatCair()
+    public ObatCair(String nama, int harga)
     {
-        // initialise instance variables
-        x = 0;
+        super(nama, harga);
     }
 
     /**
@@ -27,5 +25,10 @@ public class ObatCair extends Obat
      */
     public void caraPakai(){
         System.out.println("Obat digunakan dengan cara diminum. Cocok untuk anak-anak");
+    }
+    
+    public void cetakDeskripsi(String desc){
+        super.setDeskripsi(desc);
+        System.out.println(super.getDeskripsi());
     }
 }

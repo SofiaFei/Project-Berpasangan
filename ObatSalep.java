@@ -23,8 +23,6 @@ public class ObatSalep extends Obat
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    
-    
     public void caraPakai(){
         System.out.println("Obat digunakan dengan cara dioleskan ke permukaan kulit");
     }
