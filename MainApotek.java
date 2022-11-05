@@ -38,8 +38,14 @@ public class MainApotek
      * @return    the sum of x and y
      */
     public static void main(String[] args){
+        System.out.println("Paracetamol");
         Obat Paracetamol = new ObatTablet("Paracetamol", 7500);
         Paracetamol.setDeskripsi("Kandungan: \nParacetamol 500 mg\nKegunaan: \nUntuk meredakan demam dan nyeri, mengendalikan kadar gula darah dan menjaga fungsi otot"); 
         System.out.println(Paracetamol.getDeskripsi());
+
+        System.out.println("Panadol");
+        Obat Panadol = new ObatTablet("Panadol", 12000);
+        Panadol.setDeskripsi("Kandungan: \nParacetamol \nKegunaan: \nUntuk meredakan demam dan nyeri"); 
+        System.out.println(Panadol.getDeskripsi());
     }
 }
