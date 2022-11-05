@@ -7,16 +7,14 @@
  */
 public class ObatSalep extends Obat
 {
-    // instance variables - replace the example below with your own
     private int x;
 
     /**
      * Constructor for objects of class ObatSalep
      */
-    public ObatSalep()
+    public ObatSalep(String nama, int harga)
     {
-        // initialise instance variables
-        x = 0;
+        super(nama, harga);
     }
 
     /**
@@ -25,9 +23,14 @@ public class ObatSalep extends Obat
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    
+    
+    public void caraObat(){
+        System.out.println("Obat digunakan dengan cara dioleskan ke permukaan kulit");
+    }
+    
+    public void cetakDeskripsi(String desc){
+        super.setDeskripsi(desc);
+        System.out.println(super.getDeskripsi());
     }
 }

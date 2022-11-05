@@ -8,7 +8,7 @@
 public class Pasien
 {
     private String nama;
-    private String kode;
+    private String ktp;
 
     /**
      * Constructor for objects of class Pasien
@@ -44,5 +44,16 @@ public class Pasien
      */
     public void setNama(String namabaru) {
         this.nama = namabaru;
+    }
+    
+    /**
+     * An example of a method - replace this comment with your own
+     *
+     * @param  y  a sample parameter for a method
+     * @return    the sum of x and y
+     */
+    public String getKtp()
+    {
+        return this.ktp;
     }
 }

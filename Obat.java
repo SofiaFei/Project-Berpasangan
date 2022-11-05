@@ -8,10 +8,39 @@
 public abstract class Obat
 {
     // instance variables - replace the example below with your own
+    private String nama;
     private int harga;
-
+    private String deskripsi;
+    private int kuantitas;
+    private int keranjang;
+    
     public Obat(){
-        harga;
+    }
+    
+    public Obat(String nama, int harga){
+        this.nama = nama;
+        this.harga = harga;
+    }
+    
+    public String getNama(){
+        return this.nama;
+    }
+    
+    public int getHarga(){
+        return this.harga;
+    }
+    
+    public int getKuantitas(){
+        return this.kuantitas;
+    }
+    
+    public void setKuantitas(){
+        this.kuantitas = kuantitas;
+    }
+    
+    public int isiKeranjang(int harga, int kuantitas){
+        this.keranjang = harga * kuantitas;
+        return this.keranjang;
     }
     
     /**
@@ -20,11 +49,18 @@ public abstract class Obat
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int sampleMethod(int y)
+    public void stok()
     {
-        // put your code here
-        return x + y;
+        
     }
     
-    abstract String caraObat();
+    public abstract void caraObat();
+    
+    public String getDeskripsi(){
+        return this.deskripsi;
+    }
+    
+    public void setDeskripsi(String deskripsi){
+        this.deskripsi = deskripsi;
+    }
 }

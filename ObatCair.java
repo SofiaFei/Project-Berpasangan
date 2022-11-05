@@ -25,9 +25,7 @@ public class ObatCair extends Obat
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void caraObat(){
+        System.out.println("Obat digunakan dengan cara diminum. Cocok untuk anak-anak");
     }
 }
