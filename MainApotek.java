@@ -87,5 +87,10 @@ public class MainApotek
         Obat Neurobion = new ObatTablet("Neurobion", 48000);
         Neurobion.setDeskripsi("Kandungan: \nVitamin B1 100 mg \nVitamin B6 100 \nVitamin B12 5000 mcg \nKegunaan: \nUntuk defisiensi Vitamin B1,B6 dan B12."); 
         System.out.println(Neurobion.getDeskripsi());
+
+        System.out.println("Termorex");
+        Obat Termorex = new ObatCair("Termorex",11000);
+        Termorex.setDeskripsi("Kandungan: \nTiap sendok takar (5 ml) mengandung : \nParacetamol 120 mg \nPseudoephedrine HCl 7.5 mg \nGliseril guaiakoalat 25 mg \nChlorpheniramine Maleate 0.5 mg \nKegunaan: \nUntuk meringankan gejala flu");
+        System.out.println(Termorex.getDeskripsi());
     }
 }
