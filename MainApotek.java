@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
 /**
- * Write a description of class MainApotek here.
+ * Class Main untuk algoritma jalannya Apotek Sehat Online
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Sofia, Putri Ulfayani
+ * @version 5.11.2022
+ * @since 3.11.2022
  */
 public class MainApotek
 {
-    
 
     /**
-     * Constructor for objects of class MainApotek
+     * Constructor tanpa parameter
      */
     public MainApotek()
     {
@@ -19,7 +19,7 @@ public class MainApotek
     }
     
     /**
-     * Tempat logika apotek online dimasukkan
+     * Tempat logika Apotek Sehat Online dimasukkan
      */
     public static void apotek(){
         Scanner scan = new Scanner(System.in);
@@ -32,10 +32,9 @@ public class MainApotek
     }
     
     /**
-     * An example of a method - replace this comment with your own
+     * Method Main
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @param a command line argument
      */
     public static void main(String[] args){
         System.out.println("Paracetamol");

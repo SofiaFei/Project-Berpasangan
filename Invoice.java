@@ -1,18 +1,18 @@
 import java.util.ArrayList;
 
 /**
- * Write a description of class Invoice here.
+ * Merepresentasikan Invoice yaitu faktur dari obat-obatan
+ * yang dipesan dari Apotek Sehat berbasis Online oleh pelanggan
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Sofia, Putri Ulfayani
+ * @version 5.11.2022
+ * @since 3.11.2022
  */
 public class Invoice
 {
-    // instance variables - replace the example below with your own
-    private int x;
 
     /**
-     * Constructor for objects of class Invoice
+     * Constructor untuk membuat Pelanggan baru tanpa parameter
      */
     public Invoice()
     {

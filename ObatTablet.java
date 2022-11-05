@@ -1,31 +1,32 @@
 
 /**
- * Write a description of class ObatTablet here.
+ * Merepresentasikan Obat Tablet yang merupakan bagian dari Obat-obatan
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Sofia, Putri Ulfayani
+ * @version 5.11.2022
+ * @since 3.11.2022
  */
 public class ObatTablet extends Obat
 {
 
     /**
-     * Constructor for objects of class ObatTablet
+     * Constructor untuk membuat obat tablet baru dengan parameter
      */
     public ObatTablet(String nama, int harga)
     {
-        super(nama, harga);
+        super(nama, harga); // dari superclass obat
     }
     
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Method ini berfungsi untuk menampilkan cara pemakaian dari class obat tablet
      */
     public void caraPakai(){
-        System.out.println("Obat digunakan dengan cara ditelan bersama dengan air. Cocok untuk orang dewasa");
+        System.out.println("Obat digunakan dengan cara ditelan dengan bantuan air");
     }
     
+    /**
+     * Method ini berfungsi untuk mencetak deskripsi dari obat tablet
+     */
     public void cetakDeskripsi(String desc){
         super.setDeskripsi(desc);
         System.out.println(super.getDeskripsi());

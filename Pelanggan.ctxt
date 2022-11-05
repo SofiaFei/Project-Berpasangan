@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Pelanggan
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Pelanggan\ here.\r\n\r\n\ @author\ Sofia\r\n\ @version\ 5.11.2022\r\n\ @since\ 3.11.2022\r\n
+comment0.text=\r\n\ Merepresentasikan\ Pemain\ yaitu\ user\ yang\ sedang\r\n\ menggunakan\ Apotek\ Sehat\ berbasis\ Online\r\n\r\n\ @author\ Sofia,\ Putri\ Ulfayani\r\n\ @version\ 5.11.2022\r\n\ @since\ 3.11.2022\r\n
 comment1.params=
 comment1.target=Pelanggan()
 comment1.text=\r\n\ Constructor\ untuk\ membuat\ Pelanggan\ baru\ tanpa\ parameter\r\n

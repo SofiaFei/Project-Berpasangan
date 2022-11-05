@@ -1,12 +1,13 @@
 #BlueJ class context
 comment0.target=ObatCair
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ ObatCair\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Merepresentasikan\ Obat\ Cair\ yang\ merupakan\ bagian\ dari\ Obat-obatan\r\n\r\n\ @author\ Sofia,\ Putri\ Ulfayani\r\n\ @version\ 5.11.2022\r\n\ @since\ 3.11.2022\r\n
 comment1.params=nama\ harga
 comment1.target=ObatCair(java.lang.String,\ int)
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ ObatCair\r\n
+comment1.text=\r\n\ Constructor\ untuk\ membuat\ obat\ cair\ baru\ dengan\ parameter\r\n
 comment2.params=
 comment2.target=void\ caraPakai()
-comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
+comment2.text=\r\n\ Method\ ini\ berfungsi\ untuk\ menampilkan\ cara\ pemakaian\ dari\ class\ obat\ cair\r\n
 comment3.params=desc
 comment3.target=void\ cetakDeskripsi(java.lang.String)
+comment3.text=\r\n\ Method\ ini\ berfungsi\ untuk\ mencetak\ deskripsi\ dari\ obat\ cair\r\n
 numComments=4

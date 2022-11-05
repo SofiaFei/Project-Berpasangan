@@ -1,32 +1,32 @@
 
 /**
- * Write a description of class ObatSalep here.
+ * Merepresentasikan Obat Salep yang merupakan bagian dari Obat-obatan
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Sofia, Putri Ulfayani
+ * @version 5.11.2022
+ * @since 3.11.2022
  */
 public class ObatSalep extends Obat
 {
-    
 
     /**
-     * Constructor for objects of class ObatSalep
+     * Constructor untuk membuat obat salep baru dengan parameter
      */
     public ObatSalep(String nama, int harga)
     {
-        super(nama, harga);
+        super(nama, harga); // dari superclass obat
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Method ini berfungsi untuk menampilkan cara pemakaian dari class obat salep
      */
     public void caraPakai(){
-        System.out.println("Obat digunakan dengan cara dioleskan ke permukaan kulit");
+        System.out.println("Obat digunakan dengan cara dioleskan ke permukaan kulit secara merata");
     }
     
+    /**
+     * Method ini berfungsi untuk mencetak deskripsi dari obat salep
+     */
     public void cetakDeskripsi(String desc){
         super.setDeskripsi(desc);
         System.out.println(super.getDeskripsi());

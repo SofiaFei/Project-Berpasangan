@@ -1,8 +1,9 @@
 
 /**
- * Write a description of class Pelanggan here.
+ * Merepresentasikan Pemain yaitu user yang sedang
+ * menggunakan Apotek Sehat berbasis Online
  *
- * @author Sofia
+ * @author Sofia, Putri Ulfayani
  * @version 5.11.2022
  * @since 3.11.2022
  */
