@@ -25,7 +25,7 @@ public class ObatSalep extends Obat
      */
     
     
-    public void caraObat(){
+    public void caraPakai(){
         System.out.println("Obat digunakan dengan cara dioleskan ke permukaan kulit");
     }
     

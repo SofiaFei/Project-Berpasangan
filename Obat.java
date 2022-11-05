@@ -54,7 +54,7 @@ public abstract class Obat
         
     }
     
-    public abstract void caraObat();
+    public abstract void caraPakai();
     
     public String getDeskripsi(){
         return this.deskripsi;

@@ -25,7 +25,7 @@ public class ObatTablet extends Obat
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public void caraObat(){
+    public void caraPakai(){
         System.out.println("Obat digunakan dengan cara ditelan bersama dengan air. Cocok untuk orang dewasa");
     }
     
