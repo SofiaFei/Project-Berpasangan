@@ -25,9 +25,10 @@ public class MainApotek
         Scanner scan = new Scanner(System.in);
         
         System.out.println("-------------Selamat datang di Apotek Sehat Online------------");
-        System.out.println("Disini anda dapat memesan terlebih dahulu obat apa saja yang ingin dibeli pada Apotek Sehat");
-        System.out.println("Setelah anda membuat invoice dari pemesanan pada Apotek Sehat Online, anda dapat membawa invoice tersebut pada cabang Apotek Sehat terdekat");
-        System.out.println("Anda tidak perlu lagi menunggu antrian dengan menggunakan Apotek Sehat Online");
+        System.out.println("Disini anda dapat memesan secara online obat yang ingin dibeli pada Apotek Sehat");
+        System.out.println("Checkout obat yang ingin dibeli kemudian cetak invoice untuk dibawa ke cabang Apotek Sehat terdekat");
+        System.out.println("Anda dapat melakukan pembayaran secara offline dengan memperlihatkan invoice");
+        System.out.println("Dengan Apotek Sehat Online, anda tidak perlu menunggu antrian pada saat membeli obat");
     }
     
     /**
