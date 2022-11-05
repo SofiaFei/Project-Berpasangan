@@ -3,7 +3,8 @@
  * Write a description of class Pelanggan here.
  *
  * @author Sofia
- * @version 3.11.2022
+ * @version 5.11.2022
+ * @since 3.11.2022
  */
 public class Pelanggan
 {
@@ -11,7 +12,7 @@ public class Pelanggan
     private String ktp;
 
     /**
-     * Constructor for objects of class Pelanggan
+     * Constructor untuk membuat Pelanggan baru tanpa parameter
      */
     public Pelanggan()
     {
@@ -19,18 +20,18 @@ public class Pelanggan
     }
     
     /**
-     * Constructor for objects of class Pelanggan
+     * Constructor untuk membuat Pelanggan baru dengan parameter
      */
-    public Pelanggan(String nama)
+    public Pelanggan(String nama, String ktp)
     {
         this.nama = nama;
+        this.ktp = ktp;
     }
 
     /**
-     * An example of a method - replace this comment with your own
+     * Method ini berfungsi untuk mengembalikan nama dari pelanggan
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @return nama String yang merepresentasikan nama pelanggan
      */
     public String getNama()
     {
@@ -38,22 +39,30 @@ public class Pelanggan
     }
     
     /**
-     * Method ini berfungsi untuk menetapkan nilai dari koin
+     * Method ini berfungsi untuk menetapkan nama dari pelanggan
      *
-     * @param nilaibaru nilai baru dari koin
+     * @param namabaru nama baru dari pelanggan
      */
     public void setNama(String namabaru) {
         this.nama = namabaru;
     }
     
     /**
-     * An example of a method - replace this comment with your own
+     * Method ini berfungsi untuk mengembalikan ktp dari pelanggan
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @return ktp String yang merepresentasikan ktp pelanggan
      */
     public String getKtp()
     {
         return this.ktp;
+    }
+    
+    /**
+     * Method ini berfungsi untuk menetapkan ktp dari pelanggan
+     *
+     * @param ktpbaru ktp baru dari pelanggan
+     */
+    public void setKtp(String ktpbaru) {
+        this.ktp = ktpbaru;
     }
 }
