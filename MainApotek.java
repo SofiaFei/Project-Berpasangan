@@ -23,12 +23,23 @@ public class MainApotek
      */
     public static void apotek(){
         Scanner scan = new Scanner(System.in);
-        
-        System.out.println("-------------Selamat datang di Apotek Sehat Online------------");
+        String nama, noKtp;
+
+        System.out.println("----------------------------------Selamat datang di Apotek Sehat Online---------------------------------");
         System.out.println("Disini anda dapat memesan secara online obat yang ingin dibeli pada Apotek Sehat");
         System.out.println("Checkout obat yang ingin dibeli kemudian cetak invoice untuk dibawa ke cabang Apotek Sehat terdekat");
         System.out.println("Anda dapat melakukan pembayaran secara offline dengan memperlihatkan invoice");
         System.out.println("Dengan Apotek Sehat Online, anda tidak perlu menunggu antrian pada saat membeli obat");
+
+        Pelanggan user = new Pelanggan();
+        System.out.println("Masukkan data diri anda terlebih dahulu untuk melakukan pemesanan");
+        System.out.print("Nama: ");
+        nama = scan.next();
+        pemain.setNama(nama);
+        System.out.print("No KTP: ");
+        noKtp = scan.next();
+        pemain.setKtp(noKtp);
+
     }
     
     /**
