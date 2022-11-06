@@ -31,14 +31,14 @@ public class MainApotek
         System.out.println("Anda dapat melakukan pembayaran secara offline dengan memperlihatkan invoice");
         System.out.println("Dengan Apotek Sehat Online, anda tidak perlu menunggu antrian pada saat membeli obat");
 
-        Pelanggan user = new Pelanggan();
-        System.out.println("Masukkan data diri anda terlebih dahulu untuk melakukan pemesanan");
-        System.out.print("Nama: ");
-        nama = scan.next();
-        pemain.setNama(nama);
-        System.out.print("No KTP: ");
-        noKtp = scan.next();
-        pemain.setKtp(noKtp);
+      //  Pelanggan user = new Pelanggan();
+       // System.out.println("Masukkan data diri anda terlebih dahulu untuk melakukan pemesanan");
+       // System.out.print("Nama: ");
+        //nama = scan.next();
+        //Pemain.setNama(nama);
+        //System.out.print("No KTP: ");
+        //noKtp = scan.next();
+        //Pemain.setKtp(noKtp);
 
     }
     
@@ -48,6 +48,7 @@ public class MainApotek
      * @param a command line argument
      */
     public static void main(String[] args){
+        System.out.println("*************************************************Pilihan Obat Tablet******************************************************");
         System.out.println("Paracetamol");
         Obat Paracetamol = new ObatTablet("Paracetamol", 7500);
         Paracetamol.setDeskripsi("Kandungan: \nParacetamol 500 mg\nKegunaan: \nUntuk meredakan demam dan nyeri, mengendalikan kadar gula darah dan menjaga fungsi otot."); 
@@ -98,6 +99,7 @@ public class MainApotek
         Neurobion.setDeskripsi("Kandungan: \nVitamin B1 100 mg \nVitamin B6 100 \nVitamin B12 5000 mcg \nKegunaan: \nUntuk defisiensi Vitamin B1,B6 dan B12."); 
         System.out.println(Neurobion.getDeskripsi());
 
+        System.out.println("******************************************************Pilihan Obat Cair***************************************************");
         System.out.println("Termorex");
         Obat Termorex = new ObatCair("Termorex",11000);
         Termorex.setDeskripsi("Kandungan: \nTiap sendok takar (5 ml) mengandung : \nParacetamol 120 mg \nPseudoephedrine HCl 7.5 mg \nGliseril guaiakoalat 25 mg \nChlorpheniramine Maleate 0.5 mg \nKegunaan: \nUntuk meringankan gejala flu");
