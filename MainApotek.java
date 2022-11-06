@@ -104,5 +104,10 @@ public class MainApotek
         Obat Termorex = new ObatCair("Termorex",11000);
         Termorex.setDeskripsi("Kandungan: \nTiap sendok takar (5 ml) mengandung : \nParacetamol 120 mg \nPseudoephedrine HCl 7.5 mg \nGliseril guaiakoalat 25 mg \nChlorpheniramine Maleate 0.5 mg \nKegunaan: \nUntuk meringankan gejala flu");
         System.out.println(Termorex.getDeskripsi());
+
+        System.out.println("Decolsin");
+        Obat Decolsin = new ObatCair("Decolsin",57100);
+        Decolsin.setDeskripsi("Kandungan: \nBromhexine HCL 4 mg \nguaifenesin 100 mg \nKegunaan: \nUntuk meredakan batuk berdahak");
+        System.out.println(Decolsin.getDeskripsi());
     }
 }
