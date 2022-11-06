@@ -149,5 +149,32 @@ public class MainApotek
         Obat Bufect = new ObatCair("Bufect",21400);
         Bufect.setDeskripsi("Kandungan: \nIbuprofen 100 mg/ 5ml \nKegunaan: \nUntuk meredakan nyeri.");
         System.out.println(Bufect.getDeskripsi());
+
+        System.out.println("******************************************************Pilihan Obat Salep***************************************************");
+        System.out.println("Kalmicetine");
+        Obat Kalmicetine = new ObatSalep("Kalmicetine",22300);
+        Kalmicetine.setDeskripsi("Kandungan: \nChloramphenicol 20 mg \nKegunaan: \nUntuk infeksi kulit yang disebabkan oleh bakteri.");
+        System.out.println(Kalmicetine.getDeskripsi());
+
+        System.out.println("Kalpanax");
+        Obat Kalpanax = new ObatSalep("Kalpanax",19000);
+        Kalpanax.setDeskripsi("Kandungan: \nMiconazole nitrate 2% \nKegunaan: \nUntuk Pitiriasis versikolor, dermatofitosis, dan mikosis kulit lain.");
+        System.out.println(Kalpanax.getDeskripsi());
+
+        
+        System.out.println("Gentamicin");
+        Obat Gentamicin = new ObatSalep("Gentamicin",6500);
+        Gentamicin.setDeskripsi("Kandungan: \nGentamicin sulfate 0.1% \nKegunaan: \nUntuk pengobatan topikal infeksi primer dan sekunder pada kulit .");
+        System.out.println(Gentamicin.getDeskripsi());
+
+        System.out.println("Ketoconazole");
+        Obat Ketoconazole = new ObatSalep("Ketoconazole",10700);
+        Ketoconazole.setDeskripsi("Kandungan: \nKetoconazole 2 % \nKegunaan: \nUntuk Infeksi dermatofita pada kulit atau kuku tangan (tidak pada kuku kaki).");
+        System.out.println(Ketoconazole.getDeskripsi());
+
+        System.out.println("Lotasbat");
+        Obat Lotasbat = new ObatSalep("Lotasbat",79900);
+        Lotasbat.setDeskripsi("Kandungan: \nClobetasol propionate 0.05% \nKegunaan: \nUntuk Pengobatan jangka pendek Dermatosis yang resisten.");
+        System.out.println(Lotasbat.getDeskripsi());
     }
 }
