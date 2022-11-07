@@ -243,16 +243,16 @@ public class MainApotek {
             do{
             System.out.println("--------------------------------------------------------------------------------------------------------");
             System.out.println("------------------------------------------------Obat Salep----------------------------------------------");
-            System.out.println("1. Termorex");
-            System.out.println("2. Decolsin");
-            System.out.println("3. Bisolvon");
-            System.out.println("4. Anakonidin");
-            System.out.println("5. Paratusin");
-            System.out.println("6. Dextral");
-            System.out.println("7. Silex");
-            System.out.println("8. Siladex");
-            System.out.println("9. Ambroxol");
-            System.out.println("10. Bufect");
+            System.out.println("1. Kalmicetine");
+            System.out.println("2. Kalpanax");
+            System.out.println("3. Gentamicin");
+            System.out.println("4. Ketoconazole");
+            System.out.println("5. Lotasbat");
+            System.out.println("6. Bioplaceton");
+            System.out.println("7. PagodaSalep");
+            System.out.println("8. PikangShuang");
+            System.out.println("9. Acyclovir");
+            System.out.println("10. Scabimite");
             System.out.println("Masukkan pilihan obat salep yang ingin anda pesan: ");
             salep = scan.nextInt();
 
