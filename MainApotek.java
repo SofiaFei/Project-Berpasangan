@@ -176,51 +176,61 @@ public class MainApotek {
                 Obat Termorex = new ObatCair("Termorex",11000);
                 Termorex.setDeskripsi("Kandungan: \nTiap sendok takar (5 ml) mengandung : \nParacetamol 120 mg \nPseudoephedrine HCl 7.5 mg \nGliseril guaiakoalat 25 mg \nChlorpheniramine Maleate 0.5 mg \nKegunaan: \nUntuk meringankan gejala flu.");
                 System.out.println(Termorex.getDeskripsi());
+                Termorex.caraPakai();
             } else if ( cair == 2){
                 System.out.println("Decolsin");
                 Obat Decolsin = new ObatCair("Decolsin",18889);
                 Decolsin.setDeskripsi("Kandungan: \nDextromethorphan \nphenylpropanolamine \nParacetamol \nKegunaan: \nUntuk batuk dan flu.");
                 System.out.println(Decolsin.getDeskripsi());
+                Decolsin.caraPakai();
             } else if ( cair == 3) {
                 System.out.println("Bisolvon");
                 Obat Bisolvon = new ObatCair("Bisolvon",57100);
                 Bisolvon.setDeskripsi("Kandungan: \nBromhexine HCL 4 mg \nguaifenesin 100 mg \nKegunaan: \nUntuk meredakan batuk berdahak.");
                 System.out.println(Bisolvon.getDeskripsi());
+                Bisolvon.caraPakai();
             } else if ( cair == 4){
                 System.out.println("Anakonidin");
                 Obat Anakonidin = new ObatCair("Anakonidin",15200);
                 Anakonidin.setDeskripsi("Kandungan: \nParacetamol 120 mg \nSuccus Liquiritae 100 mg \nPseudoephedrine HCL 7.5 mg \nguaifenesin 100 mg \nKegunaan: \nUntuk meredakan batuk dan gejala flu.");
                 System.out.println(Anakonidin.getDeskripsi());
+                Anakonidin.caraPakai();
             } else if ( cair == 5) {
                 System.out.println("Paratusin");
                 Obat Paratusin = new ObatCair("Paratusin",34200);
                 Paratusin.setDeskripsi("Kandungan: \nParacetamol 120 mg \nSuccus Liquiritae 100 mg \nPseudoephedrine HCL 7.5 mg \nNoscapine 10 mg \nCholorphenamine maleate 0.5 mg \nKegunaan: \nUntuk meringankan gejala flu.");
-                System.out.println(Paratusin.getDeskripsi());             
+                System.out.println(Paratusin.getDeskripsi()); 
+                Paratusin.caraPakai();            
             } else if ( cair == 6){
                 System.out.println("Dextral");
                 Obat Dextral = new ObatCair("Dextral",18400);
                 Dextral.setDeskripsi("Kandungan: \nDextromethorpan HBr 10 mg \nGlyceryl Guaiacolate 50 mg \nPhenylpropanolamine HCl 12.5 mg \nChlorpheniramine maleate 1 mg \nKegunaan: \nUntuk mengatasi gejala flu.");
                 System.out.println(Dextral.getDeskripsi());
+                Dextral.caraPakai();
             } else if ( cair == 7) {
                 System.out.println("Silex");
                 Obat Silex = new ObatCair("Silex",105300);
                 Silex.setDeskripsi("Kandungan: \nEkstrak Thymi Herba Siccum 41.67 mg \nEkstrak Primulae Radix Siccum 10 mg \nEkstrak Althaea Folium Siccum 58.33 mg \nKegunaan: \nUntuk membantu meredakan batuk berdahak, melegakan tenggorokan dan pilek.");
-                System.out.println(Silex.getDeskripsi());             
+                System.out.println(Silex.getDeskripsi());    
+                Silex.caraPakai();         
             } else if ( cair == 8){
                 System.out.println("Siladex");
                 Obat Siladex = new ObatCair("Siladex",16900);
                 Siladex.setDeskripsi("Kandungan: \nChlopheniramine maleate 1 mg \nDextromethorphan Hydrobromide 15 mg \nKegunaan: \nUntuk meredakan batuk tidak berdahak serta alergi.");
                 System.out.println(Siladex.getDeskripsi());
+                Siladex.caraPakai();
             } else if ( cair == 9) {
                 System.out.println("Ambroxol");
                 Obat Ambroxol = new ObatCair("Ambroxol",14300);
                 Ambroxol.setDeskripsi("Kandungan: \nAmbroxol HCl 15 mg \nKegunaan: \nSebagai sekretolitik pada gangguan saluran nafas akut dan kronis khususnya pada eksaserbasi bronkitis kronis.");
-                System.out.println(Ambroxol.getDeskripsi());              
+                System.out.println(Ambroxol.getDeskripsi());
+                Ambroxol.caraPakai();              
             } else if ( cair == 10){
                 System.out.println("Bufect");
                 Obat Bufect = new ObatCair("Bufect",21400);
                 Bufect.setDeskripsi("Kandungan: \nIbuprofen 100 mg/ 5ml \nKegunaan: \nUntuk meredakan nyeri.");
                 System.out.println(Bufect.getDeskripsi());
+                Bufect.caraPakai();
             }
             System.out.println("\n");
             System.out.println("Apakah anda mau memesan?");
