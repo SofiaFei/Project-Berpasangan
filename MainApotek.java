@@ -31,14 +31,14 @@ public class MainApotek
         System.out.println("Anda dapat melakukan pembayaran secara offline dengan memperlihatkan invoice");
         System.out.println("Dengan Apotek Sehat Online, anda tidak perlu menunggu antrian pada saat membeli obat");
 
-      //  Pelanggan user = new Pelanggan();
-       // System.out.println("Masukkan data diri anda terlebih dahulu untuk melakukan pemesanan");
-       // System.out.print("Nama: ");
-        //nama = scan.next();
-        //Pemain.setNama(nama);
-        //System.out.print("No KTP: ");
-        //noKtp = scan.next();
-        //Pemain.setKtp(noKtp);
+        Pelanggan user = new Pelanggan();
+        System.out.println("Masukkan data diri anda terlebih dahulu untuk melakukan pemesanan");
+        System.out.print("Nama: ");
+        nama = scan.next();
+        user.setNama(nama);
+        System.out.print("No KTP: ");
+        noKtp = scan.next();
+        user.setKtp(noKtp);
 
     }
     
