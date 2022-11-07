@@ -176,5 +176,30 @@ public class MainApotek
         Obat Lotasbat = new ObatSalep("Lotasbat",79900);
         Lotasbat.setDeskripsi("Kandungan: \nClobetasol propionate 0.05% \nKegunaan: \nUntuk Pengobatan jangka pendek Dermatosis yang resisten.");
         System.out.println(Lotasbat.getDeskripsi());
+
+        System.out.println("Bioplacenton");
+        Obat Bioplacenton= new ObatSalep("Bioplacenton",34100);
+        Bioplacenton.setDeskripsi("Kandungan: \nPlacenta extract 10%  \nNeomycin sulfate 0.5% \nKegunaan: \nUntuk Pengobatan luka bakar dengan infeksi.");
+        System.out.println(Bioplacenton.getDeskripsi());
+
+        System.out.println("PagodaSalep");
+        Obat PagodaSalep= new ObatSalep("Pagoda Salep",10300);
+        PagodaSalep.setDeskripsi("Kandungan: \nSulfur Praecipitatum \nAsam Salisilat \nChampora \nKegunaan: \nUntuk Pengobatan Gatal-gatal di telapak tangan, kaki, selangkangan paha, kutu air, panu, kurap dan kudis");
+        System.out.println(PagodaSalep.getDeskripsi());
+
+        System.out.println("PiKangShuang");
+        Obat PiKangShuang= new ObatSalep("PiKangShuang",18800);
+        PiKangShuang.setDeskripsi("Kandungan: \nMiconazole Nitrate 10 mg  \nNeomycin Sulfate 4.6 mg \nTriamcinolone Acetonide 1 mg \nKegunaan: \nUntuk mengobati penyakit kulit yang disebabkan oleh jamur.");
+        System.out.println(PiKangShuang.getDeskripsi());  
+        
+        System.out.println("Ayclovir");
+        Obat Ayclovir= new ObatSalep("Ayclovir",7600);
+        Ayclovir.setDeskripsi("Kandungan: \nAcyclovir 5% \nKegunaan: \nUntuk pengobatan infeksi herpes pada kulit.");
+        System.out.println(Ayclovir.getDeskripsi());  
+
+        System.out.println("Scabimite");
+        Obat Scabimite= new ObatSalep("Scabimite",71100);
+        Scabimite.setDeskripsi("Kandungan: \nPermethrin 5% \nKegunaan: \nUntuk pengobatan infeksi kulit scabies.");
+        System.out.println(Scabimite.getDeskripsi());  
     }
 }
