@@ -31,14 +31,14 @@ public class MainApotek
         System.out.println("Anda dapat melakukan pembayaran secara offline dengan memperlihatkan invoice");
         System.out.println("Dengan Apotek Sehat Online, anda tidak perlu menunggu antrian pada saat membeli obat");
 
-        Pelanggan user = new Pelanggan();
-        System.out.println("Masukkan data diri anda terlebih dahulu untuk melakukan pemesanan");
-        System.out.print("Nama: ");
-        nama = scan.next();
-        pemain.setNama(nama);
-        System.out.print("No KTP: ");
-        noKtp = scan.next();
-        pemain.setKtp(noKtp);
+      //  Pelanggan user = new Pelanggan();
+       // System.out.println("Masukkan data diri anda terlebih dahulu untuk melakukan pemesanan");
+       // System.out.print("Nama: ");
+        //nama = scan.next();
+        //Pemain.setNama(nama);
+        //System.out.print("No KTP: ");
+        //noKtp = scan.next();
+        //Pemain.setKtp(noKtp);
 
     }
     
@@ -48,6 +48,7 @@ public class MainApotek
      * @param a command line argument
      */
     public static void main(String[] args){
+        System.out.println("*************************************************Pilihan Obat Tablet******************************************************");
         System.out.println("Paracetamol");
         Obat Paracetamol = new ObatTablet("Paracetamol", 7500);
         Paracetamol.setDeskripsi("Kandungan: \nParacetamol 500 mg\nKegunaan: \nUntuk meredakan demam dan nyeri, mengendalikan kadar gula darah dan menjaga fungsi otot."); 
@@ -98,9 +99,82 @@ public class MainApotek
         Neurobion.setDeskripsi("Kandungan: \nVitamin B1 100 mg \nVitamin B6 100 \nVitamin B12 5000 mcg \nKegunaan: \nUntuk defisiensi Vitamin B1,B6 dan B12."); 
         System.out.println(Neurobion.getDeskripsi());
 
+        System.out.println("******************************************************Pilihan Obat Cair***************************************************");
         System.out.println("Termorex");
         Obat Termorex = new ObatCair("Termorex",11000);
-        Termorex.setDeskripsi("Kandungan: \nTiap sendok takar (5 ml) mengandung : \nParacetamol 120 mg \nPseudoephedrine HCl 7.5 mg \nGliseril guaiakoalat 25 mg \nChlorpheniramine Maleate 0.5 mg \nKegunaan: \nUntuk meringankan gejala flu");
+        Termorex.setDeskripsi("Kandungan: \nTiap sendok takar (5 ml) mengandung : \nParacetamol 120 mg \nPseudoephedrine HCl 7.5 mg \nGliseril guaiakoalat 25 mg \nChlorpheniramine Maleate 0.5 mg \nKegunaan: \nUntuk meringankan gejala flu.");
         System.out.println(Termorex.getDeskripsi());
+
+        System.out.println("Decolsin");
+        Obat Decolsin = new ObatCair("Decolsin",18889);
+        Decolsin.setDeskripsi("Kandungan: \nDextromethorphan \nphenylpropanolamine \nParacetamol \nKegunaan: \nUntuk batuk dan flu.");
+        System.out.println(Decolsin.getDeskripsi());
+
+        System.out.println("Bisolvon");
+        Obat Bisolvon = new ObatCair("Bisolvon",57100);
+        Bisolvon.setDeskripsi("Kandungan: \nBromhexine HCL 4 mg \nguaifenesin 100 mg \nKegunaan: \nUntuk meredakan batuk berdahak.");
+        System.out.println(Bisolvon.getDeskripsi());
+
+        System.out.println("Anakonidin");
+        Obat Anakonidin = new ObatCair("Anakonidin",15200);
+        Anakonidin.setDeskripsi("Kandungan: \nParacetamol 120 mg \nSuccus Liquiritae 100 mg \nPseudoephedrine HCL 7.5 mg \nguaifenesin 100 mg \nKegunaan: \nUntuk meredakan batuk dan gejala flu.");
+        System.out.println(Anakonidin.getDeskripsi());
+
+        System.out.println("Paratusin");
+        Obat Paratusin = new ObatCair("Paratusin",34200);
+        Paratusin.setDeskripsi("Kandungan: \nParacetamol 120 mg \nSuccus Liquiritae 100 mg \nPseudoephedrine HCL 7.5 mg \nNoscapine 10 mg \nCholorphenamine maleate 0.5 mg \nKegunaan: \nUntuk meringankan gejala flu.");
+        System.out.println(Paratusin.getDeskripsi());
+
+        System.out.println("Dextral");
+        Obat Dextral = new ObatCair("Dextral",18400);
+        Dextral.setDeskripsi("Kandungan: \nDextromethorpan HBr 10 mg \nGlyceryl Guaiacolate 50 mg \nPhenylpropanolamine HCl 12.5 mg \nChlorpheniramine maleate 1 mg \nKegunaan: \nUntuk mengatasi gejala flu.");
+        System.out.println(Dextral.getDeskripsi());
+
+        System.out.println("Silex");
+        Obat Silex = new ObatCair("Silex",105300);
+        Silex.setDeskripsi("Kandungan: \nEkstrak Thymi Herba Siccum 41.67 mg \nEkstrak Primulae Radix Siccum 10 mg \nEkstrak Althaea Folium Siccum 58.33 mg \nKegunaan: \nUntuk membantu meredakan batuk berdahak, melegakan tenggorokan dan pilek.");
+        System.out.println(Silex.getDeskripsi());
+
+        System.out.println("Siladex");
+        Obat Siladex = new ObatCair("Siladex",16900);
+        Siladex.setDeskripsi("Kandungan: \nChlopheniramine maleate 1 mg \nDextromethorphan Hydrobromide 15 mg \nKegunaan: \nUntuk meredakan batuk tidak berdahak serta alergi.");
+        System.out.println(Siladex.getDeskripsi());
+
+        System.out.println("Ambroxol");
+        Obat Ambroxol = new ObatCair("Ambroxol",14300);
+        Ambroxol.setDeskripsi("Kandungan: \nAmbroxol HCl 15 mg \nKegunaan: \nSebagai sekretolitik pada gangguan saluran nafas akut dan kronis khususnya pada eksaserbasi bronkitis kronis.");
+        System.out.println(Ambroxol.getDeskripsi());
+
+        System.out.println("Bufect");
+        Obat Bufect = new ObatCair("Bufect",21400);
+        Bufect.setDeskripsi("Kandungan: \nIbuprofen 100 mg/ 5ml \nKegunaan: \nUntuk meredakan nyeri.");
+        System.out.println(Bufect.getDeskripsi());
+
+        System.out.println("******************************************************Pilihan Obat Salep***************************************************");
+        System.out.println("Kalmicetine");
+        Obat Kalmicetine = new ObatSalep("Kalmicetine",22300);
+        Kalmicetine.setDeskripsi("Kandungan: \nChloramphenicol 20 mg \nKegunaan: \nUntuk infeksi kulit yang disebabkan oleh bakteri.");
+        System.out.println(Kalmicetine.getDeskripsi());
+
+        System.out.println("Kalpanax");
+        Obat Kalpanax = new ObatSalep("Kalpanax",19000);
+        Kalpanax.setDeskripsi("Kandungan: \nMiconazole nitrate 2% \nKegunaan: \nUntuk Pitiriasis versikolor, dermatofitosis, dan mikosis kulit lain.");
+        System.out.println(Kalpanax.getDeskripsi());
+
+        
+        System.out.println("Gentamicin");
+        Obat Gentamicin = new ObatSalep("Gentamicin",6500);
+        Gentamicin.setDeskripsi("Kandungan: \nGentamicin sulfate 0.1% \nKegunaan: \nUntuk pengobatan topikal infeksi primer dan sekunder pada kulit .");
+        System.out.println(Gentamicin.getDeskripsi());
+
+        System.out.println("Ketoconazole");
+        Obat Ketoconazole = new ObatSalep("Ketoconazole",10700);
+        Ketoconazole.setDeskripsi("Kandungan: \nKetoconazole 2 % \nKegunaan: \nUntuk Infeksi dermatofita pada kulit atau kuku tangan (tidak pada kuku kaki).");
+        System.out.println(Ketoconazole.getDeskripsi());
+
+        System.out.println("Lotasbat");
+        Obat Lotasbat = new ObatSalep("Lotasbat",79900);
+        Lotasbat.setDeskripsi("Kandungan: \nClobetasol propionate 0.05% \nKegunaan: \nUntuk Pengobatan jangka pendek Dermatosis yang resisten.");
+        System.out.println(Lotasbat.getDeskripsi());
     }
 }
