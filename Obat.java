@@ -4,7 +4,7 @@
  * yang tersedia pada Apotek Sehat Online
  *
  * @author Sofia, Putri Ulfayani
- * @version 5.11.2022
+ * @version 9.11.2022
  * @since 3.11.2022
  */
 public abstract class Obat
