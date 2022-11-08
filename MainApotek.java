@@ -294,14 +294,39 @@ public class MainApotek {
                 System.out.println(Lotasbat.getDeskripsi()); 
                 Lotasbat.caraPakai();             
             } else if ( salep == 6){
+                System.out.println("Bioplacenton");
+                Obat Bioplacenton = new ObatSalep("Bioplacenton",34100);
+                Bioplacenton.setDeskripsi("Kandungan: \nPlacenta extract 10% \nNeomycin sulfate 0.5% \nKegunaan: \nUntuk Pengobatan luka bakar.");
+                System.out.println(Bioplacenton.getDeskripsi()); 
+                Bioplacenton.caraPakai();
 
             } else if ( salep == 7) {
+                System.out.println("PagodaSalep");
+                Obat PagodaSalep= new ObatSalep("PagodaSalep",10300);
+                PagodaSalep.setDeskripsi("Kandungan: \nSulfur Praecipitatum \nAsam Salisilat \nChampora \nKegunaan: \nUntuk Pengobatan gatal-gatal ditelapak tangan dan kaki.");
+                System.out.println(PagodaSalep.getDeskripsi()); 
+                PagodaSalep.caraPakai();
            
             } else if ( salep == 8){
+                System.out.println("PikangShuang");
+                Obat PikangShuang = new ObatSalep("PikangShuang",18800);
+                PikangShuang.setDeskripsi("Kandungan: \nMiconazole Nitrate 10 mg \nNeomycin Sulfate 4.6 mg \nTriamcinolone Acetonide 1 mg \nKegunaan: \nUntuk mengobati penyakit kulit yang disebabkan oleh jamur.");
+                System.out.println(PikangShuang.getDeskripsi()); 
+                PikangShuang.caraPakai();
 
             } else if ( salep == 9) {
+                System.out.println("Acyclovir");
+                Obat Acyclovir = new ObatSalep("Acyclovir",7600);
+                Acyclovir.setDeskripsi("Kandungan: \nAcyclovir 5%  \nKegunaan: \nUntuk Pengobatan infeksi herpes simpleks pada kulit .");
+                System.out.println(Acyclovir.getDeskripsi()); 
+                Acyclovir.caraPakai();
             
             } else if ( salep == 10){
+                System.out.println("Scabimite");
+                Obat Scabimite = new ObatSalep("Scabimite",71100);
+                Scabimite.setDeskripsi("Kandungan: \nPermethrin 5% \nKegunaan: \nUntuk mengobati penyakit scabies.");
+                System.out.println(Scabimite.getDeskripsi()); 
+                Scabimite.caraPakai();
 
             }
             System.out.println("\n");
