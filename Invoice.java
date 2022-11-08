@@ -12,7 +12,7 @@ public class Invoice
 {
 
     /**
-     * Constructor untuk membuat Pelanggan baru tanpa parameter
+     * Constructor untuk membuat Invoice baru tanpa parameter
      */
     public Invoice()
     {

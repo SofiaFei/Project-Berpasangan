@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @since 3.11.2022
  */
 public class MainApotek {
-
+    private boolean yakin;
     /**
      * Constructor tanpa parameter
      */
@@ -16,13 +16,27 @@ public class MainApotek {
 
     }
 
+    public boolean yakin() {
+        Scanner scan = new Scanner(System.in);
+        int yakin;
+        System.out.println("Apakah anda mau memesan?");
+        System.out.println("1. Ya");
+        System.out.println("2.Tidak");
+        yakin = scan.nextInt();
+        if (yakin == 1) {
+            return true;
+        }
+        return false;
+    }
+
     /**
      * Tempat logika Apotek Sehat Online dimasukkan
      */
     public static void apotek() {
         Scanner scan = new Scanner(System.in);
+        MainApotek ma = new MainApotek();
         String nama, noKtp;
-        int jenis, tablet, cair, salep, yakin;
+        int jenis, tablet, cair, salep;
 
         System.out.println(
                 "----------------------------------Selamat datang di Apotek Sehat Online---------------------------------");
@@ -96,12 +110,14 @@ public class MainApotek {
                             "Kandungan: \nParacetamol 500 mg\nKegunaan: \nUntuk meredakan demam dan nyeri, mengendalikan kadar gula darah dan menjaga fungsi otot.");
                     System.out.println(Paracetamol.getDeskripsi());
                     Paracetamol.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (tablet == 2) {
                     System.out.println("Panadol");
                     Obat Panadol = new ObatTablet("Panadol", 12000);
                     Panadol.setDeskripsi("Kandungan: \nParacetamol \nKegunaan: \nUntuk meredakan demam dan nyeri.");
                     System.out.println(Panadol.getDeskripsi());
                     Panadol.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (tablet == 3) {
                     System.out.println("Bodrex");
                     Obat Bodrex = new ObatTablet("Bodrex", 11000);
@@ -109,6 +125,7 @@ public class MainApotek {
                             "Kandungan: \nCaffeine 50 mg \nParacetamol 600 mg \nKegunaan: \nUntuk meringankan sakit kepala,sakit gigi dan menurunkan demam.");
                     System.out.println(Bodrex.getDeskripsi());
                     Bodrex.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (tablet == 4) {
                     System.out.println("Domperidone");
                     Obat Domperidone = new ObatTablet("Domperidone", 6500);
@@ -116,6 +133,7 @@ public class MainApotek {
                             "Kandungan: \nDomperidone 10 mg  \nKegunaan: \nUntuk meredakan mual dan muntah,mempercepat kontraksi usus atau lambung,serta meningkatkan produksi ASI.");
                     System.out.println(Domperidone.getDeskripsi());
                     Domperidone.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (tablet == 5) {
                     System.out.println("Amlodipine");
                     Obat Amlodipine = new ObatTablet("Amlodipine", 26400);
@@ -123,6 +141,7 @@ public class MainApotek {
                             "Kandungan: \nAmlodipine 10 mg \nKegunaan: \nUntuk mengontrol tekanan darah.");
                     System.out.println(Amlodipine.getDeskripsi());
                     Amlodipine.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (tablet == 6) {
                     System.out.println("Promag");
                     Obat Promag = new ObatTablet("Promag", 9000);
@@ -130,6 +149,7 @@ public class MainApotek {
                             "Kandungan: \nHydrotalcite 200 mg \nMg(OH)2 150 mg \nSimethicone 50 mg \nKegunaan: \nUntuk meringankan gejala-gejala yang berhubungan dengan asam lambung.");
                     System.out.println(Promag.getDeskripsi());
                     Promag.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (tablet == 7) {
                     System.out.println("Entrostop");
                     Obat Entrostop = new ObatTablet("Entrostop", 17800);
@@ -137,6 +157,7 @@ public class MainApotek {
                             "Kandungan: \nAttapulgite koloid aktif 650 mg \nPectin 50 mg \nKegunaan: \nUntuk mengatasi diare, menyerap racun, dan memadatkan tinja.");
                     System.out.println(Entrostop.getDeskripsi());
                     Entrostop.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (tablet == 8) {
                     System.out.println("Lodia");
                     Obat Lodia = new ObatTablet("Lodia", 24100);
@@ -144,6 +165,7 @@ public class MainApotek {
                             "Kandungan: \nLoperamide HCL 2 mg \nKegunaan: \nUntuk diare akut non spesifik dan diare kronik.");
                     System.out.println(Lodia.getDeskripsi());
                     Lodia.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (tablet == 9) {
                     System.out.println("Sangobion");
                     Obat Sangobion = new ObatTablet("Sangobion", 22600);
@@ -151,6 +173,7 @@ public class MainApotek {
                             "Kandungan: \nFe gluconate 250 mg (setara elemental Fe 30 mg)  \nManganese Sulfate 0.2 mg \nCopper Sulfate 0.2 mg \nvit.C 50 mg \nFolic Acid 1 mg \nvit.B12 7.5 mcg \nKegunaan: \nUntuk membantu pembentukan darah.");
                     System.out.println(Sangobion.getDeskripsi());
                     Sangobion.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (tablet == 10) {
                     System.out.println("Neurobion");
                     Obat Neurobion = new ObatTablet("Neurobion", 48000);
@@ -158,13 +181,11 @@ public class MainApotek {
                             "Kandungan: \nVitamin B1 100 mg \nVitamin B6 100 \nVitamin B12 5000 mcg \nKegunaan: \nUntuk defisiensi Vitamin B1,B6 dan B12.");
                     System.out.println(Neurobion.getDeskripsi());
                     Neurobion.caraPakai();
+                    ma.yakin = ma.yakin();
                 }
                 System.out.println("\n");
-                System.out.println("Apakah anda mau memesan?");
-                System.out.println("1. Ya");
-                System.out.println("2.Tidak");
-                yakin = scan.nextInt();
-            } while (yakin != 1);
+
+            } while (ma.yakin);
 
         } else if (jenis == 2) { // obat cair
             do {
@@ -200,6 +221,7 @@ public class MainApotek {
                             "Kandungan: \nTiap sendok takar (5 ml) mengandung : \nParacetamol 120 mg \nPseudoephedrine HCl 7.5 mg \nGliseril guaiakoalat 25 mg \nChlorpheniramine Maleate 0.5 mg \nKegunaan: \nUntuk meringankan gejala flu.");
                     System.out.println(Termorex.getDeskripsi());
                     Termorex.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (cair == 2) {
                     System.out.println("Decolsin");
                     Obat Decolsin = new ObatCair("Decolsin", 18889);
@@ -207,6 +229,7 @@ public class MainApotek {
                             "Kandungan: \nDextromethorphan \nphenylpropanolamine \nParacetamol \nKegunaan: \nUntuk batuk dan flu.");
                     System.out.println(Decolsin.getDeskripsi());
                     Decolsin.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (cair == 3) {
                     System.out.println("Bisolvon");
                     Obat Bisolvon = new ObatCair("Bisolvon", 57100);
@@ -214,6 +237,7 @@ public class MainApotek {
                             "Kandungan: \nBromhexine HCL 4 mg \nguaifenesin 100 mg \nKegunaan: \nUntuk meredakan batuk berdahak.");
                     System.out.println(Bisolvon.getDeskripsi());
                     Bisolvon.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (cair == 4) {
                     System.out.println("Anakonidin");
                     Obat Anakonidin = new ObatCair("Anakonidin", 15200);
@@ -221,6 +245,7 @@ public class MainApotek {
                             "Kandungan: \nParacetamol 120 mg \nSuccus Liquiritae 100 mg \nPseudoephedrine HCL 7.5 mg \nguaifenesin 100 mg \nKegunaan: \nUntuk meredakan batuk dan gejala flu.");
                     System.out.println(Anakonidin.getDeskripsi());
                     Anakonidin.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (cair == 5) {
                     System.out.println("Paratusin");
                     Obat Paratusin = new ObatCair("Paratusin", 34200);
@@ -228,6 +253,7 @@ public class MainApotek {
                             "Kandungan: \nParacetamol 120 mg \nSuccus Liquiritae 100 mg \nPseudoephedrine HCL 7.5 mg \nNoscapine 10 mg \nCholorphenamine maleate 0.5 mg \nKegunaan: \nUntuk meringankan gejala flu.");
                     System.out.println(Paratusin.getDeskripsi());
                     Paratusin.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (cair == 6) {
                     System.out.println("Dextral");
                     Obat Dextral = new ObatCair("Dextral", 18400);
@@ -235,6 +261,7 @@ public class MainApotek {
                             "Kandungan: \nDextromethorpan HBr 10 mg \nGlyceryl Guaiacolate 50 mg \nPhenylpropanolamine HCl 12.5 mg \nChlorpheniramine maleate 1 mg \nKegunaan: \nUntuk mengatasi gejala flu.");
                     System.out.println(Dextral.getDeskripsi());
                     Dextral.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (cair == 7) {
                     System.out.println("Silex");
                     Obat Silex = new ObatCair("Silex", 105300);
@@ -242,6 +269,7 @@ public class MainApotek {
                             "Kandungan: \nEkstrak Thymi Herba Siccum 41.67 mg \nEkstrak Primulae Radix Siccum 10 mg \nEkstrak Althaea Folium Siccum 58.33 mg \nKegunaan: \nUntuk membantu meredakan batuk berdahak, melegakan tenggorokan dan pilek.");
                     System.out.println(Silex.getDeskripsi());
                     Silex.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (cair == 8) {
                     System.out.println("Siladex");
                     Obat Siladex = new ObatCair("Siladex", 16900);
@@ -249,6 +277,7 @@ public class MainApotek {
                             "Kandungan: \nChlopheniramine maleate 1 mg \nDextromethorphan Hydrobromide 15 mg \nKegunaan: \nUntuk meredakan batuk tidak berdahak serta alergi.");
                     System.out.println(Siladex.getDeskripsi());
                     Siladex.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (cair == 9) {
                     System.out.println("Ambroxol");
                     Obat Ambroxol = new ObatCair("Ambroxol", 14300);
@@ -256,19 +285,17 @@ public class MainApotek {
                             "Kandungan: \nAmbroxol HCl 15 mg \nKegunaan: \nSebagai sekretolitik pada gangguan saluran nafas akut dan kronis khususnya pada eksaserbasi bronkitis kronis.");
                     System.out.println(Ambroxol.getDeskripsi());
                     Ambroxol.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (cair == 10) {
                     System.out.println("Bufect");
                     Obat Bufect = new ObatCair("Bufect", 21400);
                     Bufect.setDeskripsi("Kandungan: \nIbuprofen 100 mg/ 5ml \nKegunaan: \nUntuk meredakan nyeri.");
                     System.out.println(Bufect.getDeskripsi());
                     Bufect.caraPakai();
+                    ma.yakin = ma.yakin();
                 }
                 System.out.println("\n");
-                System.out.println("Apakah anda mau memesan?");
-                System.out.println("1. Ya");
-                System.out.println("2.Tidak");
-                yakin = scan.nextInt();
-            } while (yakin != 1);
+            } while (ma.yakin);
 
         } else if (jenis == 3) { // obat salep
             do {
@@ -304,6 +331,7 @@ public class MainApotek {
                             "Kandungan: \nChloramphenicol 20 mg \nKegunaan: \nUntuk infeksi kulit yang disebabkan oleh bakteri.");
                     System.out.println(Kalmicetine.getDeskripsi());
                     Kalmicetine.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (salep == 2) {
                     System.out.println("Kalpanax");
                     Obat Kalpanax = new ObatSalep("Kalpanax", 19000);
@@ -311,6 +339,7 @@ public class MainApotek {
                             "Kandungan: \nMiconazole nitrate 2% \nKegunaan: \nUntuk Pitiriasis versikolor, dermatofitosis, dan mikosis kulit lain.");
                     System.out.println(Kalpanax.getDeskripsi());
                     Kalpanax.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (salep == 3) {
                     System.out.println("Gentamicin");
                     Obat Gentamicin = new ObatSalep("Gentamicin", 6500);
@@ -318,6 +347,7 @@ public class MainApotek {
                             "Kandungan: \nGentamicin sulfate 0.1% \nKegunaan: \nUntuk pengobatan topikal infeksi primer dan sekunder pada kulit .");
                     System.out.println(Gentamicin.getDeskripsi());
                     Gentamicin.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (salep == 4) {
                     System.out.println("Ketoconazole");
                     Obat Ketoconazole = new ObatSalep("Ketoconazole", 10700);
@@ -325,6 +355,7 @@ public class MainApotek {
                             "Kandungan: \nKetoconazole 2 % \nKegunaan: \nUntuk Infeksi dermatofita pada kulit atau kuku tangan (tidak pada kuku kaki).");
                     System.out.println(Ketoconazole.getDeskripsi());
                     Ketoconazole.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (salep == 5) {
                     System.out.println("Lotasbat");
                     Obat Lotasbat = new ObatSalep("Lotasbat", 79900);
@@ -332,6 +363,7 @@ public class MainApotek {
                             "Kandungan: \nClobetasol propionate 0.05% \nKegunaan: \nUntuk Pengobatan jangka pendek Dermatosis yang resisten.");
                     System.out.println(Lotasbat.getDeskripsi());
                     Lotasbat.caraPakai();
+                    ma.yakin = ma.yakin();
                 } else if (salep == 6) {
 
                 } else if (salep == 7) {
@@ -344,11 +376,7 @@ public class MainApotek {
 
                 }
                 System.out.println("\n");
-                System.out.println("Apakah anda mau memesan?");
-                System.out.println("1. Ya");
-                System.out.println("2.Tidak");
-                yakin = scan.nextInt();
-            } while (yakin != 1);
+            } while (ma.yakin);
         }
     }
 
