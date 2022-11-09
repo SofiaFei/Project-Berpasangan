@@ -1,10 +1,3 @@
-
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-USER INSTRUCTIONS:
-
 # APOTEK SEHAT ONLINE
 
 <h4> About APOTEK SEHAT ONLINE </h4>
@@ -14,19 +7,22 @@ Dengan adanya layanan ini pelanggan hanya perlu memesan obat terlebih dahulu kem
 
 # How To Run This CLI Application
 
-1. Clone Repository
-2. go to folder Pemesanan-Tiket-Pesawat/Pemesanan-Tiket-Pesawat
-3. Compile file MAIN.java
-4. Run file MAIN.java
-5. type this command
+1. Clone Repositori
+  <pre><code>git clone https://github.com/SofiaFei/ProjectBerpasangan_ApotekSehat.git</code></pre>
+2. Masuk ke dalam folder
+  <pre><code>cd ProjectBerpasangan_ApotekSehat</code></pre>
+3. Compile file MainApotek.java
+  <pre><code>javac MainApotek.java</code></pre>
+4. Run file MainApotek.java
+  <pre><code>java MainApotek</code></pre>
 
 ### Team Member 🥇
   
   | Name        | NPM           |
 | ------------- |:-------------:|
 | <em>Sofia</em>      | 2108107010006 |
-| <em>Putri Ulfayani</em> | 2107010004      |
+| <em>Putri Ulfayani</em> | 2108107010004      |
 
 # Diagram
-![diagram](https://user-images.githubusercontent.com/92986198/200586757-48834e98-5ea3-4c67-a8c9-bed5a60f7b7c.png)
+![diagram](https://user-images.githubusercontent.com/111619251/200806666-db279839-5ee1-48fd-a6b1-168021f85462.png)
 
