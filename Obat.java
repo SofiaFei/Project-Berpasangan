@@ -14,6 +14,7 @@ public abstract class Obat
     private String deskripsi;
     private int jumlah;
     private int keranjang;
+    private int subTotal;
     
     /**
      * Constructor tanpa parameter
@@ -61,12 +62,31 @@ public abstract class Obat
      *
      * @param jumlah jumlah baru dari obat
      */
-    public void setJumlah(){
+    public void setJumlah(int jumlah){
         this.jumlah = jumlah;
+    }
+
+    /**
+     * Method ini berfungsi untuk mengembalikan jumlah dari obat
+     *
+     * @return jumlah int yang merepresentasikan jumlah obat
+     */
+    public int getSubTotal(){
+        return this.subTotal;
+    }
+    
+    /**
+     * Method ini berfungsi untuk menetapkan jumlah dari obat
+     *
+     * @param jumlah jumlah baru dari obat
+     */
+    public void setSubTotal(int subTotal){
+        this.subTotal = subTotal;
     }
     
     public int isiKeranjang(int harga, int jumlah){
         this.keranjang = harga * jumlah;
+        setSubTotal(this.keranjang);
         return this.keranjang;
     }
     

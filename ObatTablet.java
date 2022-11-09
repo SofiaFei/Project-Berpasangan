@@ -8,7 +8,12 @@
  */
 public class ObatTablet extends Obat
 {
-
+    /**
+     * Constructor untuk membuat obat tablet baru dengan parameter
+     */
+    public ObatTablet()
+    {
+    }
     /**
      * Constructor untuk membuat obat tablet baru dengan parameter
      */
