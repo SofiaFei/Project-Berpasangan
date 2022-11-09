@@ -4,7 +4,7 @@
  * yang tersedia pada Apotek Sehat Online
  *
  * @author Sofia, Putri Ulfayani
- * @version 5.11.2022
+ * @version 9.11.2022
  * @since 3.11.2022
  */
 public abstract class Obat
@@ -12,8 +12,10 @@ public abstract class Obat
     private String nama;
     private int harga;
     private String deskripsi;
-    private int jumlah;
-    private int keranjang;
+    private int jumlah = 0;
+    private int keranjangharga = 0;
+    private int keranjangjumlah = 0;
+    private int subTotal;
     
     /**
      * Constructor tanpa parameter
@@ -46,6 +48,10 @@ public abstract class Obat
     public int getHarga(){
         return this.harga;
     }
+
+    public void setHarga(int harga) {
+        this.harga = harga;
+    }
     
     /**
      * Method ini berfungsi untuk mengembalikan jumlah dari obat
@@ -61,13 +67,36 @@ public abstract class Obat
      *
      * @param jumlah jumlah baru dari obat
      */
-    public void setJumlah(){
-        this.jumlah = jumlah;
+    public void setJumlah(int jumlah){
+        this.jumlah += jumlah;
+    }
+
+    /**
+     * Method ini berfungsi untuk mengembalikan jumlah dari obat
+     *
+     * @return jumlah int yang merepresentasikan jumlah obat
+     */
+    public int getSubTotal(int harga, int jumlah){
+        int temp = harga * jumlah;
+        setSubTotal(temp);
+        return temp;
     }
     
-    public int isiKeranjang(int harga, int jumlah){
-        this.keranjang = harga * jumlah;
-        return this.keranjang;
+    /**
+     * Method ini berfungsi untuk menetapkan jumlah dari obat
+     *
+     * @param jumlah jumlah baru dari obat
+     */
+    public void setSubTotal(int harga){
+        this.subTotal = harga;
+    }
+    
+    public int isiKeranjangHarga(){
+        return this.subTotal;
+    }
+
+    public int isiKeranjangjumlah(){
+        return getJumlah();
     }
     
     public abstract void caraPakai();
