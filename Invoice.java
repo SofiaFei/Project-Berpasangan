@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /**
  * Merepresentasikan Invoice yaitu faktur dari obat-obatan
  * yang dipesan dari Apotek Sehat berbasis Online oleh pelanggan
@@ -25,9 +23,10 @@ public class Invoice
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public void sampleMethod()
+    public void cetakInvoice(int harga, int jumlah)
     {
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        System.out.println("Total harga : Rp"+harga);
+        System.out.println("Total barang: " + jumlah);
         
     }
 }
