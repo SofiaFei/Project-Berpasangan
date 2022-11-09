@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * Class Main untuk algoritma jalannya Apotek Sehat Online
+ * Class Main untuk algoritma jalannya layanan Apotek Sehat Online
  *
  * @author Sofia, Putri Ulfayani
  * @version 9.11.2022
@@ -9,105 +9,130 @@ import java.util.Scanner;
  */
 public class MainApotek {
     private boolean yakin;
-    // private boolean yangbener;
 
     /**
      * Constructor tanpa parameter
      */
     public MainApotek() {
-
     }
 
-     public void setYakin(boolean fix) {
-         this.yakin = fix;
+    /**
+     * Method ini berfungsi untuk melakukan return ke menu sebelumnya
+     *
+     * @param fix pilihan jika user yakin ingin kembali ke menu sebelumnya
+     */
+    public void setYakin(boolean fix) {
+        this.yakin = fix;
     }
 
+    /**
+     * Method ini berfungsi untuk mengecek apakah ada obat tablet yang dipesan
+     * pelanggan
+     * 
+     * @return Paracetamol int yang merepresentasikan jumlah Paracetamol
+     * @return Panadol int yang merepresentasikan jumlah Panadol
+     * @return Bodrex int yang merepresentasikan jumlah Bodrex
+     * @return Domperidone int yang merepresentasikan jumlah Domperidone
+     * @return Amplodipine int yang merepresentasikan jumlah Amplodipine
+     */
     public void cekObatTablet(int Paracetamol, int Panadol, int Bodrex, int Domperidone, int Amlodipine) {
+        System.out.println("OBAT TABLET");
         if ((Paracetamol > 0) || (Panadol > 0) || (Bodrex > 0) || (Domperidone > 0) || (Amlodipine > 0)) {
+            Obat tablet = new ObatTablet();
+            tablet.caraPakai();
             if (Paracetamol > 0) {
-                System.out.println("Paracetamol : " + Paracetamol + "buah");
-            } 
+                System.out.println("- Paracetamol\t: " + Paracetamol + " buah");
+            }
             if (Panadol > 0) {
-                System.out.println("Panadol : " + Panadol + "buah");
+                System.out.println("- Panadol\t: " + Panadol + " buah");
             }
             if (Bodrex > 0) {
-                System.out.println("Bodrex : " + Bodrex + "buah");  
+                System.out.println("- Bodrex\t: " + Bodrex + " buah");
             }
             if (Domperidone > 0) {
-                System.out.println("Domperidone : " + Domperidone + "buah");
+                System.out.println("- Domperidone\t: " + Domperidone + " buah");
             }
             if (Amlodipine > 0) {
-                System.out.println("Amlodipine : " + Amlodipine + "buah");
+                System.out.println("- Amlodipine\t: " + Amlodipine + " buah");
             }
         } else {
-            System.out.println("Tidak ada pesanan obat tablet");
+            System.out.println("\nTidak ada pesanan obat tablet");
         }
     }
 
-    public void cekObatCair(int Termorex, int Decolsin, int Bisolvon, int Anakonidin, int Paratusin){
+    /**
+     * Method ini berfungsi untuk mengecek apakah ada obat cair yang dipesan
+     * pelanggan
+     * 
+     * @return Termorex int yang merepresentasikan jumlah Termorex
+     * @return Decolsin int yang merepresentasikan jumlah Decolsin
+     * @return Bisolvon int yang merepresentasikan jumlah Bisolvon
+     * @return Anakonidin int yang merepresentasikan jumlah Anakonidin
+     * @return Paratusin int yang merepresentasikan jumlah Paratusin
+     */
+    public void cekObatCair(int Termorex, int Decolsin, int Bisolvon, int Anakonidin, int Paratusin) {
+        System.out.println("\nOBAT CAIR");
         if ((Termorex > 0) || (Decolsin > 0) || (Bisolvon > 0) || (Anakonidin > 0) || (Paratusin > 0)) {
+            Obat cair = new ObatCair();
+            cair.caraPakai();
             if (Termorex > 0) {
-                System.out.println("Termorex : " +Termorex + "buah");
-            } 
-            if (Decolsin  > 0) {
-                System.out.println("Decolsin  : " + Decolsin  + "buah");
+                System.out.println("- Termorex\t: " + Termorex + " buah");
+            }
+            if (Decolsin > 0) {
+                System.out.println("- Decolsin\t: " + Decolsin + " buah");
             }
             if (Bisolvon > 0) {
-                System.out.println("Bisolvon: " + Bisolvon + "buah");  
+                System.out.println("- Bisolvon\t: " + Bisolvon + " buah");
             }
             if (Anakonidin > 0) {
-                System.out.println("Anakonidin : " + Anakonidin + "buah");
+                System.out.println("- Anakonidin\t: " + Anakonidin + " buah");
             }
-            if (Paratusin> 0) {
-                System.out.println("Paratusin : " + Paratusin + "buah");
+            if (Paratusin > 0) {
+                System.out.println("- Paratusin\t: " + Paratusin + " buah");
             }
         } else {
-            System.out.println("Tidak ada pesanan obat cair");
+            System.out.println("\nTidak ada pesanan obat cair");
         }
     }
 
-    public void cekObatSalep(int Kalmicetine, int Kalpanax, int Gentamicin, int Ketoconazole, int Lotasbat){
+    /**
+     * Method ini berfungsi untuk mengecek apakah ada obat salep yang dipesan
+     * pelanggan
+     * 
+     * @return Kalmicetine int yang merepresentasikan jumlah Kalmicetine
+     * @return Kalpanax int yang merepresentasikan jumlah Kalpanax
+     * @return Gentamicin int yang merepresentasikan jumlah Gentamicin
+     * @return Ketoconazole int yang merepresentasikan jumlah Ketoconazole
+     * @return Lotasbat int yang merepresentasikan jumlah Lotasbat
+     */
+    public void cekObatSalep(int Kalmicetine, int Kalpanax, int Gentamicin, int Ketoconazole, int Lotasbat) {
+        System.out.println("\nOBAT SALEP");
         if ((Kalmicetine > 0) || (Kalpanax > 0) || (Gentamicin > 0) || (Ketoconazole > 0) || (Lotasbat > 0)) {
+            Obat salep = new ObatSalep();
+            salep.caraPakai();
             if (Kalmicetine > 0) {
-                System.out.println("Kalmicetine : " +Kalmicetine + "buah");
-            } 
-            if (Kalpanax  > 0) {
-                System.out.println("Kalpanax  : " + Kalpanax  + "buah");
+                System.out.println("- Kalmicetine\t: " + Kalmicetine + " buah");
+            }
+            if (Kalpanax > 0) {
+                System.out.println("- Kalpanax\t: " + Kalpanax + " buah");
             }
             if (Gentamicin > 0) {
-                System.out.println("Gentamicin: " + Gentamicin + "buah");  
+                System.out.println("- Gentamicin\t: " + Gentamicin + " buah");
             }
             if (Ketoconazole > 0) {
-                System.out.println("Ketoconazole : " + Ketoconazole + "buah");
+                System.out.println("- Ketoconazole\t: " + Ketoconazole + " buah");
             }
-            if (Lotasbat> 0) {
-                System.out.println("Lotasbat : " + Lotasbat + "buah");
+            if (Lotasbat > 0) {
+                System.out.println("- Lotasbat\t: " + Lotasbat + " buah");
             }
         } else {
-            System.out.println("Tidak ada pesanan obat salep");
+            System.out.println("\nTidak ada pesanan obat salep");
         }
     }
 
-    // public boolean kembali(int pilih){
-        // if (pilih == 6){
-
-    //     }
-    // }
-    // public boolean yakin() {
-        // Scanner scan = new Scanner(System.in);
-        // int serius;
-        // System.out.println(
-        //         "--------------------------------------------------------------------------------------------------------");
-        // System.out.println("Apakah anda mau memesan?");
-        // System.out.println("1. Ya");
-        // System.out.println("2.Tidak");
-        // serius = scan.nextInt();
-        // if (serius == 1) {
-        //     return true;
-        // }
-        // return false;
-    // }
-
+    /**
+     * Method ini berfungsi untuk menampilkan menu obat
+     */
     public void menuObat() {
         System.out.println(
                 "--------------------------------------------------------------------------------------------------------");
@@ -120,46 +145,55 @@ public class MainApotek {
         System.out.print("Masukkan pilihan jenis obat yang ingin anda pesan: ");
     }
 
+    /**
+     * Method ini berfungsi untuk menampilkan menu obat tablet
+     */
     public void menuTablet() {
-            System.out.println(
-                    "--------------------------------------------------------------------------------------------------------");
-            System.out.println(
-                    "-----------------------------------------------Obat Tablet----------------------------------------------");
-            System.out.println("1. Paracetamol (Rp 7.500)");
-            System.out.println("2. Panadol (Rp 12.000)");
-            System.out.println("3. Bodrex (Rp 11.100)");
-            System.out.println("4. Domperidone (Rp 6.500)");
-            System.out.println("5. Amlodipine (Rp 26.400)");
-            System.out.println("6. Kembali");
-            System.out.println("Masukkan pilihan obat tablet yang ingin anda pesan: ");
+        System.out.println(
+                "--------------------------------------------------------------------------------------------------------");
+        System.out.println(
+                "-----------------------------------------------Obat Tablet----------------------------------------------");
+        System.out.println("1. Paracetamol (Rp 7.500)");
+        System.out.println("2. Panadol (Rp 12.000)");
+        System.out.println("3. Bodrex (Rp 11.100)");
+        System.out.println("4. Domperidone (Rp 6.500)");
+        System.out.println("5. Amlodipine (Rp 26.400)");
+        System.out.println("6. Kembali");
+        System.out.print("Masukkan pilihan anda: ");
     }
 
+    /**
+     * Method ini berfungsi untuk menampilkan menu obat cair
+     */
     public void menuCair() {
-            System.out.println(
-                    "--------------------------------------------------------------------------------------------------------");
-            System.out.println(
-                    "------------------------------------------------Obat Cair-----------------------------------------------");
-            System.out.println("1. Termorex (Rp 11.000)");
-            System.out.println("2. Decolsin (Rp 18.889)");
-            System.out.println("3. Bisolvon (Rp 57.100)");
-            System.out.println("4. Anakonidin (Rp 15.200)");
-            System.out.println("5. Paratusin (Rp 34.200)");
-            System.out.println("6. Kembali");
-            System.out.println("Masukkan pilihan obat cair yang ingin anda pesan: ");
+        System.out.println(
+                "--------------------------------------------------------------------------------------------------------");
+        System.out.println(
+                "------------------------------------------------Obat Cair-----------------------------------------------");
+        System.out.println("1. Termorex (Rp 11.000)");
+        System.out.println("2. Decolsin (Rp 18.889)");
+        System.out.println("3. Bisolvon (Rp 57.100)");
+        System.out.println("4. Anakonidin (Rp 15.200)");
+        System.out.println("5. Paratusin (Rp 34.200)");
+        System.out.println("6. Kembali");
+        System.out.print("Masukkan pilihan anda: ");
     }
 
+    /**
+     * Method ini berfungsi untuk menampilkan menu obat salep
+     */
     public void menuSalep() {
-            System.out.println(
-                    "--------------------------------------------------------------------------------------------------------");
-            System.out.println(
-                    "------------------------------------------------Obat Salep----------------------------------------------");
-            System.out.println("1. Kalmicetine (Rp 22.300)");
-            System.out.println("2. Kalpanax (Rp 19.000)");
-            System.out.println("3. Gentamicin (Rp 6.500)");
-            System.out.println("4. Ketoconazole (Rp 10.700)");
-            System.out.println("5. Lotasbat (Rp 79.900)");
-            System.out.println("6. Kembali");
-            System.out.println("Masukkan pilihan obat salep yang ingin anda pesan: ");
+        System.out.println(
+                "--------------------------------------------------------------------------------------------------------");
+        System.out.println(
+                "------------------------------------------------Obat Salep----------------------------------------------");
+        System.out.println("1. Kalmicetine (Rp 22.300)");
+        System.out.println("2. Kalpanax (Rp 19.000)");
+        System.out.println("3. Gentamicin (Rp 6.500)");
+        System.out.println("4. Ketoconazole (Rp 10.700)");
+        System.out.println("5. Lotasbat (Rp 79.900)");
+        System.out.println("6. Kembali");
+        System.out.print("Masukkan pilihan anda: ");
     }
 
     /**
@@ -169,19 +203,19 @@ public class MainApotek {
         Scanner scan = new Scanner(System.in);
         MainApotek ma = new MainApotek();
         Invoice bill = new Invoice();
-
+        // obat tablet
         Obat Paracetamol = new ObatTablet("Paracetamol", 7500);
         Obat Panadol = new ObatTablet("Panadol", 12000);
         Obat Bodrex = new ObatTablet("Bodrex", 11000);
         Obat Domperidone = new ObatTablet("Domperidone", 6500);
         Obat Amlodipine = new ObatTablet("Amlodipine", 26400);
-
+        // obat cair
         Obat Termorex = new ObatCair("Termorex", 11000);
         Obat Decolsin = new ObatCair("Decolsin", 18889);
         Obat Bisolvon = new ObatCair("Bisolvon", 57100);
         Obat Anakonidin = new ObatCair("Anakonidin", 15200);
         Obat Paratusin = new ObatCair("Paratusin", 34200);
-
+        // obat salep
         Obat Kalmicetine = new ObatSalep("Kalmicetine", 22300);
         Obat Kalpanax = new ObatSalep("Kalpanax", 19000);
         Obat Gentamicin = new ObatSalep("Gentamicin", 6500);
@@ -203,22 +237,24 @@ public class MainApotek {
 
         Pelanggan user = new Pelanggan();
         System.out.println("Masukkan data diri anda terlebih dahulu untuk melakukan pemesanan");
-        System.out.print("Nama: ");
+        System.out.print("Nama\t: ");
         nama = scan.next();
         user.setNama(nama);
-        System.out.print("KTP: ");
+        System.out.print("KTP\t: ");
         noKtp = scan.next();
         user.setKtp(noKtp);
+
         ma.setYakin(true);
         do {
             ma.menuObat();
             jenis = scan.nextInt();
 
-            while ((jenis != 1) && (jenis != 2) && (jenis != 3) && (jenis != 4)) { // untuk pelanggan yang salah menginput jenis
+            while ((jenis != 1) && (jenis != 2) && (jenis != 3) && (jenis != 4)) { // untuk pelanggan yang salah
+                                                                                   // menginput jenis
                 System.out.println("Anda salah menginput jenis obat, silahkan dicoba untuk menginput ulang");
                 System.out.println(
                         "--------------------------------------------------------------------------------------------------------");
-                System.out.println("Masukkan pilihan jenis obat yang ingin anda pesan: ");
+                System.out.print("\nMasukkan pilihan jenis obat yang ingin anda pesan: ");
                 jenis = scan.nextInt();
             }
 
@@ -226,88 +262,90 @@ public class MainApotek {
                 ma.menuTablet();
                 tablet = scan.nextInt();
 
-                while ((tablet < 1) || (tablet > 6)) { // untuk pelanggan yang salah menginput jenis
-                    System.out.println("Anda salah menginput obat tablet, silahkan dicoba untuk menginput ulang");
+                while ((tablet < 1) || (tablet > 6)) { // untuk pelanggan yang salah menginput pilihan pada menu obat
+                                                       // tablet
+                    System.out.println("Anda salah menginput pilihan, silahkan dicoba untuk menginput ulang");
                     System.out.println(
                             "--------------------------------------------------------------------------------------------------------");
-                    System.out.println("Masukkan pilihan obat tablet yang ingin anda pesan: ");
+                    System.out.print("Masukkan pilihan anda: ");
                     tablet = scan.nextInt();
                 }
 
                 if (tablet == 1) {
+                    System.out.println(
+                            "--------------------------------------------------------------------------------------------------------");
                     System.out.println("Paracetamol");
-                    
                     Paracetamol.setDeskripsi(
-                            "Kandungan: \nParacetamol 500 mg\nKegunaan: \nUntuk meredakan demam dan nyeri, mengendalikan kadar gula darah dan menjaga fungsi otot.");
+                            "Kandungan: \n\t- Paracetamol 500 mg\nKegunaan: \n\tUntuk meredakan demam dan nyeri, mengendalikan kadar gula darah dan menjaga fungsi otot.");
                     System.out.println(Paracetamol.getDeskripsi());
-                    Paracetamol.caraPakai();
-                    System.out.print("Masukkan jumlah :");
+
+                    System.out.print("\nMasukkan jumlah obat yang ingin dipesan:");
                     int jumlah = scan.nextInt();
                     Paracetamol.setJumlah(jumlah);
 
-
                     Paracetamol.getSubTotal(Paracetamol.getHarga(), Paracetamol.getJumlah());
                     Paracetamol.isiKeranjangHarga();
-                    Paracetamol.isiKeranjangjumlah();
+                    Paracetamol.isiKeranjangJumlah();
                 } else if (tablet == 2) {
+                    System.out.println(
+                            "--------------------------------------------------------------------------------------------------------");
                     System.out.println("Panadol");
-                    
-                    Panadol.setDeskripsi("Kandungan: \nParacetamol \nKegunaan: \nUntuk meredakan demam dan nyeri.");
+                    Panadol.setDeskripsi(
+                            "Kandungan: \n\t- Paracetamol \nKegunaan: \n\tUntuk meredakan demam dan nyeri.");
                     System.out.println(Panadol.getDeskripsi());
-                    Panadol.caraPakai();
-                    System.out.print("Masukkan jumlah :");
+
+                    System.out.print("\nMasukkan jumlah obat yang ingin dipesan:");
                     int jumlah = scan.nextInt();
                     Panadol.setJumlah(jumlah);
 
-
                     Panadol.getSubTotal(Panadol.getHarga(), Panadol.getJumlah());
                     Panadol.isiKeranjangHarga();
-                    Panadol.isiKeranjangjumlah();
+                    Panadol.isiKeranjangJumlah();
                 } else if (tablet == 3) {
+                    System.out.println(
+                            "--------------------------------------------------------------------------------------------------------");
                     System.out.println("Bodrex");
-                    
                     Bodrex.setDeskripsi(
-                            "Kandungan: \nCaffeine 50 mg \nParacetamol 600 mg \nKegunaan: \nUntuk meringankan sakit kepala,sakit gigi dan menurunkan demam.");
+                            "Kandungan: \n\t- Caffeine 50 mg \n\t- Paracetamol 600 mg \nKegunaan: \n\tUntuk meringankan sakit kepala, sakit gigi, dan menurunkan demam.");
                     System.out.println(Bodrex.getDeskripsi());
-                    Bodrex.caraPakai();
-                    System.out.print("Masukkan jumlah :");
+
+                    System.out.print("\nMasukkan jumlah obat yang ingin dipesan:");
                     int jumlah = scan.nextInt();
                     Bodrex.setJumlah(jumlah);
 
-
                     Bodrex.getSubTotal(Bodrex.getHarga(), Bodrex.getJumlah());
                     Bodrex.isiKeranjangHarga();
-                    Bodrex.isiKeranjangjumlah();
+                    Bodrex.isiKeranjangJumlah();
                 } else if (tablet == 4) {
+                    System.out.println(
+                            "--------------------------------------------------------------------------------------------------------");
                     System.out.println("Domperidone");
-                    
                     Domperidone.setDeskripsi(
-                            "Kandungan: \nDomperidone 10 mg  \nKegunaan: \nUntuk meredakan mual dan muntah,mempercepat kontraksi usus atau lambung,serta meningkatkan produksi ASI.");
+                            "Kandungan: \n\t- Domperidone 10 mg  \nKegunaan: \n\tUntuk meredakan mual dan muntah, mempercepat kontraksi usus atau lambung, serta meningkatkan produksi ASI.");
                     System.out.println(Domperidone.getDeskripsi());
-                    Domperidone.caraPakai();
-                    System.out.print("Masukkan jumlah :");
+
+                    System.out.print("\nMasukkan jumlah obat yang ingin dipesan:");
                     int jumlah = scan.nextInt();
                     Domperidone.setJumlah(jumlah);
 
-
                     Domperidone.getSubTotal(Domperidone.getHarga(), Domperidone.getJumlah());
                     Domperidone.isiKeranjangHarga();
-                    Domperidone.isiKeranjangjumlah();
+                    Domperidone.isiKeranjangJumlah();
                 } else if (tablet == 5) {
+                    System.out.println(
+                            "--------------------------------------------------------------------------------------------------------");
                     System.out.println("Amlodipine");
-                    
                     Amlodipine.setDeskripsi(
-                            "Kandungan: \nAmlodipine 10 mg \nKegunaan: \nUntuk mengontrol tekanan darah.");
+                            "Kandungan: \n\t- Amlodipine 10 mg \nKegunaan: \n\tUntuk mengontrol tekanan darah.");
                     System.out.println(Amlodipine.getDeskripsi());
-                    Amlodipine.caraPakai();
-                    System.out.print("Masukkan jumlah :");
+
+                    System.out.print("\nMasukkan jumlah obat yang ingin dipesan:");
                     int jumlah = scan.nextInt();
                     Amlodipine.setJumlah(jumlah);
 
-
-                    Amlodipine.getSubTotal( Amlodipine.getHarga(),  Amlodipine.getJumlah());
+                    Amlodipine.getSubTotal(Amlodipine.getHarga(), Amlodipine.getJumlah());
                     Amlodipine.isiKeranjangHarga();
-                    Amlodipine.isiKeranjangjumlah();
+                    Amlodipine.isiKeranjangJumlah();
                 } else if (tablet == 6) {
                     continue;
                 }
@@ -315,91 +353,91 @@ public class MainApotek {
                 ma.menuCair();
                 cair = scan.nextInt();
 
-                while ((cair < 1) || (cair > 6)) { // untuk pelanggan yang salah menginput jenis
-                    System.out.println("Anda salah menginput obat cair, silahkan dicoba untuk menginput ulang");
+                while ((cair < 1) || (cair > 6)) { // untuk pelanggan yang salah menginput pilihan pada menu obat cair
+                    System.out.println("Anda salah menginput pilihan, silahkan dicoba untuk menginput ulang");
                     System.out.println(
                             "--------------------------------------------------------------------------------------------------------");
-                    System.out.println("Masukkan pilihan obat cair yang ingin anda pesan: ");
+                    System.out.print("Masukkan pilihan anda: ");
                     cair = scan.nextInt();
                 }
 
                 if (cair == 1) {
+                    System.out.println(
+                            "--------------------------------------------------------------------------------------------------------");
                     System.out.println("Termorex");
-                    
                     Termorex.setDeskripsi(
-                            "Kandungan: \nTiap sendok takar (5 ml) mengandung : \nParacetamol 120 mg \nPseudoephedrine HCl 7.5 mg \nGliseril guaiakoalat 25 mg \nChlorpheniramine Maleate 0.5 mg \nKegunaan: \nUntuk meringankan gejala flu.");
+                            "Kandungan: \nTiap sendok takar (5 ml) mengandung : \n\t- Paracetamol 120 mg \n\t- Pseudoephedrine HCl 7.5 mg \n\t- Gliseril guaiakoalat 25 mg \n\t- Chlorpheniramine Maleate 0.5 mg \nKegunaan: \n\tUntuk meringankan gejala flu.");
                     System.out.println(Termorex.getDeskripsi());
-                    Termorex.caraPakai();
-                    System.out.print("Masukkan jumlah :");
+
+                    System.out.print("\nMasukkan jumlah obat yang ingin dipesan:");
                     int jumlah = scan.nextInt();
                     Termorex.setJumlah(jumlah);
 
-
-                    Termorex.getSubTotal( Termorex.getHarga(),  Termorex.getJumlah());
+                    Termorex.getSubTotal(Termorex.getHarga(), Termorex.getJumlah());
                     Termorex.isiKeranjangHarga();
-                    Termorex.isiKeranjangjumlah();
+                    Termorex.isiKeranjangJumlah();
 
                 } else if (cair == 2) {
+                    System.out.println(
+                            "--------------------------------------------------------------------------------------------------------");
                     System.out.println("Decolsin");
-                    
                     Decolsin.setDeskripsi(
-                            "Kandungan: \nDextromethorphan \nphenylpropanolamine \nParacetamol \nKegunaan: \nUntuk batuk dan flu.");
+                            "Kandungan: \n\t- Dextromethorphan \n\t- phenylpropanolamine \n\t- Paracetamol \nKegunaan: \n\tUntuk batuk dan flu.");
                     System.out.println(Decolsin.getDeskripsi());
-                    Decolsin.caraPakai();
-                    System.out.print("Masukkan jumlah :");
+
+                    System.out.print("\nMasukkan jumlah obat yang ingin dipesan:");
                     int jumlah = scan.nextInt();
                     Decolsin.setJumlah(jumlah);
 
-
-                    Decolsin.getSubTotal( Decolsin.getHarga(),  Decolsin.getJumlah());
+                    Decolsin.getSubTotal(Decolsin.getHarga(), Decolsin.getJumlah());
                     Decolsin.isiKeranjangHarga();
-                    Decolsin.isiKeranjangjumlah();
+                    Decolsin.isiKeranjangJumlah();
                 } else if (cair == 3) {
+                    System.out.println(
+                            "--------------------------------------------------------------------------------------------------------");
                     System.out.println("Bisolvon");
-                    
                     Bisolvon.setDeskripsi(
-                            "Kandungan: \nBromhexine HCL 4 mg \nguaifenesin 100 mg \nKegunaan: \nUntuk meredakan batuk berdahak.");
+                            "Kandungan: \n\t- Bromhexine HCL 4 mg \n\t- guaifenesin 100 mg \nKegunaan: \n\tUntuk meredakan batuk berdahak.");
                     System.out.println(Bisolvon.getDeskripsi());
-                    Bisolvon.caraPakai();
-                    System.out.print("Masukkan jumlah :");
+
+                    System.out.print("\nMasukkan jumlah obat yang ingin dipesan:");
                     int jumlah = scan.nextInt();
                     Bisolvon.setJumlah(jumlah);
 
-
-                    Bisolvon.getSubTotal( Bisolvon.getHarga(),  Bisolvon.getJumlah());
+                    Bisolvon.getSubTotal(Bisolvon.getHarga(), Bisolvon.getJumlah());
                     Bisolvon.isiKeranjangHarga();
-                    Bisolvon.isiKeranjangjumlah();
+                    Bisolvon.isiKeranjangJumlah();
                 } else if (cair == 4) {
+                    System.out.println(
+                            "--------------------------------------------------------------------------------------------------------");
                     System.out.println("Anakonidin");
-                    
                     Anakonidin.setDeskripsi(
-                            "Kandungan: \nParacetamol 120 mg \nSuccus Liquiritae 100 mg \nPseudoephedrine HCL 7.5 mg \nguaifenesin 100 mg \nKegunaan: \nUntuk meredakan batuk dan gejala flu.");
+                            "Kandungan: \n\t- Paracetamol 120 mg \n\t- Succus Liquiritae 100 mg \n\t- Pseudoephedrine HCL 7.5 mg \n\t- guaifenesin 100 mg \nKegunaan: \n\tUntuk meredakan batuk dan gejala flu.");
                     System.out.println(Anakonidin.getDeskripsi());
-                    Anakonidin.caraPakai();
-                    System.out.print("Masukkan jumlah :");
+
+                    System.out.print("\nMasukkan jumlah obat yang ingin dipesan:");
                     int jumlah = scan.nextInt();
                     Anakonidin.setJumlah(jumlah);
 
-
-                    Anakonidin.getSubTotal( Anakonidin.getHarga(),  Anakonidin.getJumlah());
+                    Anakonidin.getSubTotal(Anakonidin.getHarga(), Anakonidin.getJumlah());
                     Anakonidin.isiKeranjangHarga();
-                    Anakonidin.isiKeranjangjumlah();
-                
+                    Anakonidin.isiKeranjangJumlah();
+
                 } else if (cair == 5) {
+                    System.out.println(
+                            "--------------------------------------------------------------------------------------------------------");
                     System.out.println("Paratusin");
-                   
                     Paratusin.setDeskripsi(
-                            "Kandungan: \nParacetamol 120 mg \nSuccus Liquiritae 100 mg \nPseudoephedrine HCL 7.5 mg \nNoscapine 10 mg \nCholorphenamine maleate 0.5 mg \nKegunaan: \nUntuk meringankan gejala flu.");
+                            "Kandungan: \n\t- Paracetamol 120 mg \n\t- Succus Liquiritae 100 mg \n\t- Pseudoephedrine HCL 7.5 mg \n\t- Noscapine 10 mg \n\t- Cholorphenamine maleate 0.5 mg \nKegunaan: \n\tUntuk meringankan gejala flu.");
                     System.out.println(Paratusin.getDeskripsi());
-                    Paratusin.caraPakai();
-                    System.out.print("Masukkan jumlah :");
+
+                    System.out.print("\nMasukkan jumlah obat yang ingin dipesan:");
                     int jumlah = scan.nextInt();
                     Paratusin.setJumlah(jumlah);
 
-
-                    Paratusin.getSubTotal( Paratusin.getHarga(),  Paratusin.getJumlah());
+                    Paratusin.getSubTotal(Paratusin.getHarga(), Paratusin.getJumlah());
                     Paratusin.isiKeranjangHarga();
-                    Paratusin.isiKeranjangjumlah();
+                    Paratusin.isiKeranjangJumlah();
                 } else if (cair == 6) {
                     continue;
                 }
@@ -407,111 +445,140 @@ public class MainApotek {
                 ma.menuSalep();
                 salep = scan.nextInt();
 
-                while ((salep < 1) || (salep > 6)) { // untuk pelanggan yang salah menginput jenis
-                    System.out.println("Anda salah menginput obat salep, silahkan dicoba untuk menginput ulang");
+                while ((salep < 1) || (salep > 6)) { // untuk pelanggan yang salah menginput pilihan pada menu obat
+                                                     // salep
+                    System.out.println("Anda salah menginput pilihan, silahkan dicoba untuk menginput ulang");
                     System.out.println(
                             "--------------------------------------------------------------------------------------------------------");
-                    System.out.println("Masukkan pilihan obat salep yang ingin anda pesan: ");
+                    System.out.print("Masukkan pilihan anda: ");
                     salep = scan.nextInt();
                 }
 
                 if (salep == 1) {
+                    System.out.println(
+                            "--------------------------------------------------------------------------------------------------------");
                     System.out.println("Kalmicetine");
-                    
                     Kalmicetine.setDeskripsi(
-                            "Kandungan: \nChloramphenicol 20 mg \nKegunaan: \nUntuk infeksi kulit yang disebabkan oleh bakteri.");
+                            "Kandungan: \n\t- Chloramphenicol 20 mg \nKegunaan: \n\tUntuk infeksi kulit yang disebabkan oleh bakteri.");
                     System.out.println(Kalmicetine.getDeskripsi());
-                    Kalmicetine.caraPakai();
-                    System.out.print("Masukkan jumlah :");
+
+                    System.out.print("\nMasukkan jumlah obat yang ingin dipesan:");
                     int jumlah = scan.nextInt();
                     Kalmicetine.setJumlah(jumlah);
 
-
-                    Kalmicetine.getSubTotal( Kalmicetine.getHarga(),  Kalmicetine.getJumlah());
+                    Kalmicetine.getSubTotal(Kalmicetine.getHarga(), Kalmicetine.getJumlah());
                     Kalmicetine.isiKeranjangHarga();
-                    Kalmicetine.isiKeranjangjumlah();
+                    Kalmicetine.isiKeranjangJumlah();
                 } else if (salep == 2) {
+                    System.out.println(
+                            "--------------------------------------------------------------------------------------------------------");
                     System.out.println("Kalpanax");
-                    
                     Kalpanax.setDeskripsi(
-                            "Kandungan: \nMiconazole nitrate 2% \nKegunaan: \nUntuk Pitiriasis versikolor, dermatofitosis, dan mikosis kulit lain.");
+                            "Kandungan: \n\t- Miconazole nitrate 2% \nKegunaan: \n\tUntuk Pitiriasis versikolor, dermatofitosis, dan mikosis kulit lain.");
                     System.out.println(Kalpanax.getDeskripsi());
-                    Kalpanax.caraPakai();
-                    System.out.print("Masukkan jumlah :");
+
+                    System.out.print("\nMasukkan jumlah obat yang ingin dipesan:");
                     int jumlah = scan.nextInt();
                     Kalpanax.setJumlah(jumlah);
 
-
-                    Kalpanax.getSubTotal( Kalpanax.getHarga(),  Kalpanax.getJumlah());
+                    Kalpanax.getSubTotal(Kalpanax.getHarga(), Kalpanax.getJumlah());
                     Kalpanax.isiKeranjangHarga();
-                    Kalpanax.isiKeranjangjumlah();
+                    Kalpanax.isiKeranjangJumlah();
                 } else if (salep == 3) {
+                    System.out.println(
+                            "--------------------------------------------------------------------------------------------------------");
                     System.out.println("Gentamicin");
-                    
                     Gentamicin.setDeskripsi(
-                            "Kandungan: \nGentamicin sulfate 0.1% \nKegunaan: \nUntuk pengobatan topikal infeksi primer dan sekunder pada kulit .");
+                            "Kandungan: \n\t- Gentamicin sulfate 0.1% \nKegunaan: \n\tUntuk pengobatan topikal infeksi primer dan sekunder pada kulit.");
                     System.out.println(Gentamicin.getDeskripsi());
-                    Gentamicin.caraPakai();
-                    System.out.print("Masukkan jumlah :");
+
+                    System.out.print("\nMasukkan jumlah obat yang ingin dipesan:");
                     int jumlah = scan.nextInt();
                     Gentamicin.setJumlah(jumlah);
 
-
-                    Gentamicin.getSubTotal( Gentamicin.getHarga(),  Gentamicin.getJumlah());
+                    Gentamicin.getSubTotal(Gentamicin.getHarga(), Gentamicin.getJumlah());
                     Gentamicin.isiKeranjangHarga();
-                    Gentamicin.isiKeranjangjumlah();
+                    Gentamicin.isiKeranjangJumlah();
                 } else if (salep == 4) {
+                    System.out.println(
+                            "--------------------------------------------------------------------------------------------------------");
                     System.out.println("Ketoconazole");
-                    
                     Ketoconazole.setDeskripsi(
-                            "Kandungan: \nKetoconazole 2 % \nKegunaan: \nUntuk Infeksi dermatofita pada kulit atau kuku tangan (tidak pada kuku kaki).");
+                            "Kandungan: \n\t- Ketoconazole 2 % \nKegunaan: \n\tUntuk Infeksi dermatofita pada kulit atau kuku tangan (tidak pada kuku kaki).");
                     System.out.println(Ketoconazole.getDeskripsi());
-                    Ketoconazole.caraPakai();
-                    System.out.print("Masukkan jumlah :");
+
+                    System.out.print("\nMasukkan jumlah obat yang ingin dipesan:");
                     int jumlah = scan.nextInt();
                     Ketoconazole.setJumlah(jumlah);
 
-
-                    Ketoconazole.getSubTotal(  Ketoconazole.getHarga(),   Ketoconazole.getJumlah());
+                    Ketoconazole.getSubTotal(Ketoconazole.getHarga(), Ketoconazole.getJumlah());
                     Ketoconazole.isiKeranjangHarga();
-                    Ketoconazole.isiKeranjangjumlah();
+                    Ketoconazole.isiKeranjangJumlah();
                 } else if (salep == 5) {
+                    System.out.println(
+                            "--------------------------------------------------------------------------------------------------------");
                     System.out.println("Lotasbat");
-                    
                     Lotasbat.setDeskripsi(
-                            "Kandungan: \nClobetasol propionate 0.05% \nKegunaan: \nUntuk Pengobatan jangka pendek Dermatosis yang resisten.");
+                            "Kandungan: \n\t- Clobetasol propionate 0.05% \nKegunaan: \n\tUntuk Pengobatan jangka pendek Dermatosis yang resisten.");
                     System.out.println(Lotasbat.getDeskripsi());
-                    Lotasbat.caraPakai();
-                    System.out.print("Masukkan jumlah :");
+
+                    System.out.print("\nMasukkan jumlah obat yang ingin dipesan:");
                     int jumlah = scan.nextInt();
                     Lotasbat.setJumlah(jumlah);
 
-
-                    Lotasbat.getSubTotal(  Lotasbat.getHarga(),   Lotasbat.getJumlah());
+                    Lotasbat.getSubTotal(Lotasbat.getHarga(), Lotasbat.getJumlah());
                     Lotasbat.isiKeranjangHarga();
-                    Lotasbat.isiKeranjangjumlah();
-                } else if (salep == 5) {
+                    Lotasbat.isiKeranjangJumlah();
                 } else if (salep == 6) {
                     continue;
                 }
-            } else if (jenis == 4){
-                int duit = Paracetamol.isiKeranjangHarga() + Panadol.isiKeranjangHarga() + Bodrex.isiKeranjangHarga() + Domperidone.isiKeranjangHarga() + Amlodipine.isiKeranjangHarga() + Termorex.isiKeranjangHarga() + Decolsin.isiKeranjangHarga() + Bisolvon.isiKeranjangHarga()+ Anakonidin.isiKeranjangHarga()+Paratusin.isiKeranjangHarga()+Kalmicetine.isiKeranjangHarga()+Kalpanax.isiKeranjangHarga()+Gentamicin.isiKeranjangHarga()+Ketoconazole.isiKeranjangHarga()+Lotasbat.isiKeranjangHarga();
-    
-                int banyak = Paracetamol.isiKeranjangjumlah() + Panadol.isiKeranjangjumlah() + Bodrex.isiKeranjangjumlah() + Domperidone.isiKeranjangjumlah() + Amlodipine.isiKeranjangjumlah() + Termorex.isiKeranjangjumlah() + Decolsin.isiKeranjangjumlah() + Bisolvon.isiKeranjangjumlah()+ Anakonidin.isiKeranjangjumlah()+Paratusin.isiKeranjangjumlah()+Kalmicetine.isiKeranjangjumlah()+Kalpanax.isiKeranjangjumlah()+Gentamicin.isiKeranjangjumlah()+Ketoconazole.isiKeranjangjumlah()+Lotasbat.isiKeranjangjumlah();
+            } else if (jenis == 4) {
+                // total harga dari pemesanan obat
+                int duit = Paracetamol.isiKeranjangHarga() + Panadol.isiKeranjangHarga() + Bodrex.isiKeranjangHarga()
+                        + Domperidone.isiKeranjangHarga() + Amlodipine.isiKeranjangHarga()
+                        + Termorex.isiKeranjangHarga() + Decolsin.isiKeranjangHarga() + Bisolvon.isiKeranjangHarga()
+                        + Anakonidin.isiKeranjangHarga() + Paratusin.isiKeranjangHarga()
+                        + Kalmicetine.isiKeranjangHarga() + Kalpanax.isiKeranjangHarga()
+                        + Gentamicin.isiKeranjangHarga() + Ketoconazole.isiKeranjangHarga()
+                        + Lotasbat.isiKeranjangHarga();
+                // total jumlah obat dari pemesanan obat
+                int banyak = Paracetamol.isiKeranjangJumlah() + Panadol.isiKeranjangJumlah()
+                        + Bodrex.isiKeranjangJumlah() + Domperidone.isiKeranjangJumlah()
+                        + Amlodipine.isiKeranjangJumlah() + Termorex.isiKeranjangJumlah()
+                        + Decolsin.isiKeranjangJumlah() + Bisolvon.isiKeranjangJumlah()
+                        + Anakonidin.isiKeranjangJumlah() + Paratusin.isiKeranjangJumlah()
+                        + Kalmicetine.isiKeranjangJumlah() + Kalpanax.isiKeranjangJumlah()
+                        + Gentamicin.isiKeranjangJumlah() + Ketoconazole.isiKeranjangJumlah()
+                        + Lotasbat.isiKeranjangJumlah();
+                // struk pemesanan obat
+                System.out.println(
+                        "--------------------------------------------------------------------------------------------------------");
+                System.out.println("\t\t\t\t\tSTRUK PEMESANAN OBAT");
+                System.out.println("Nama\t: " + user.getNama() + "\nKTP\t: " + user.getKtp());
+                System.out.println(
+                        "--------------------------------------------------------------------------------------------------------");
+                ma.cekObatTablet(Paracetamol.isiKeranjangJumlah(), Panadol.isiKeranjangJumlah(),
+                        Bodrex.isiKeranjangJumlah(), Domperidone.isiKeranjangJumlah(), Amlodipine.isiKeranjangJumlah());
 
-                ma.cekObatTablet(Paracetamol.isiKeranjangjumlah(), Panadol.isiKeranjangjumlah(), Bodrex.isiKeranjangjumlah(), Domperidone.isiKeranjangjumlah(), Amlodipine.isiKeranjangjumlah());
+                ma.cekObatCair(Termorex.isiKeranjangJumlah(), Decolsin.isiKeranjangJumlah(),
+                        Bisolvon.isiKeranjangJumlah(), Anakonidin.isiKeranjangJumlah(), Paratusin.isiKeranjangJumlah());
 
-                ma.cekObatCair(Termorex.isiKeranjangjumlah(), Decolsin.isiKeranjangjumlah(), Bisolvon.isiKeranjangjumlah(), Anakonidin.isiKeranjangjumlah(), Paratusin.isiKeranjangjumlah());
+                ma.cekObatSalep(Kalmicetine.isiKeranjangJumlah(), Kalpanax.isiKeranjangJumlah(),
+                        Gentamicin.isiKeranjangJumlah(), Ketoconazole.isiKeranjangJumlah(),
+                        Lotasbat.isiKeranjangJumlah());
 
-                ma.cekObatSalep(Kalmicetine.isiKeranjangjumlah(), Kalpanax.isiKeranjangjumlah(), Gentamicin.isiKeranjangjumlah(), Ketoconazole.isiKeranjangjumlah(), Lotasbat.isiKeranjangjumlah());
-
-                bill.cetakInvoice(duit, banyak);
-
+                System.out.println(
+                        "--------------------------------------------------------------------------------------------------------");
+                bill.cetakInvoice(banyak, duit);
+                System.out.println("\n\t\t\tStruk ini dapat ditukarkan di cabang Apotek Sehat terdekat");
+                System.out.println("\t\t\tTerima Kasih telah menggunakan layanan Apotek Sehat Online");
+                System.out.println("\t\t\t\t\tSemoga Anda Puas");
+                System.out.println(
+                        "--------------------------------------------------------------------------------------------------------");
                 ma.setYakin(false);
             }
-        } while(ma.yakin);
+        } while (ma.yakin);
 
-        
     }
 
     /**
