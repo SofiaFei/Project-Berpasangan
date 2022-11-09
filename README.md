@@ -28,5 +28,4 @@ Dengan adanya layanan ini pelanggan hanya perlu memesan obat terlebih dahulu kem
 | <em>Putri Ulfayani</em> | 2107010004      |
 
 # Diagram
-![diagram](https://user-images.githubusercontent.com/92986198/200586757-48834e98-5ea3-4c67-a8c9-bed5a60f7b7c.png)
 
